@@ -1,0 +1,186 @@
+.setupContainer {
+  margin: 0;
+}
+
+.checkboxRoot {
+  padding: 0;
+
+  &:not(.checkboxChecked) > span > svg {
+    fill: $colorSilver;
+    stroke: $colorPaleGreyTwo;
+  }
+}
+
+.cameraIcon {
+  padding: 0;
+  margin-left: 2px;
+  width: 18px;
+  margin-left: 5px;
+}
+
+.arrowIcon {
+  padding: 0;
+  width: 21px;
+  margin-right: 5px;
+}
+
+.setupHeaderRoot {
+  height: 50px;
+  padding: 0;
+  background-color: $colorWhite;
+}
+
+.setupHeaderContent {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.setupHeaderExpanded {
+  min-height: 50px !important;
+  height: 50px;
+  background-color: $colorPaleGreyTwo;
+}
+
+.checkboxContainer {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.checkboxChecked {
+  color: $colorAzure !important;
+}
+
+.nameContainer {
+  flex: 16;
+}
+
+.setupTitle {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  color: $colorBlack;
+  margin-right: 7px;
+}
+
+.shotsCounter {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: normal;
+  color: $colorBlack;
+}
+
+.rightInfo {
+  flex: 10;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cameraContainer {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  flex: 2;
+}
+
+.camerasCounter {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  color: $colorAzure;
+}
+
+.arrowIconContainer  {
+  flex: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.timeTracking {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex: 8;
+}
+
+.time {
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: normal;
+  color: $colorBlack;
+  flex: 1;
+
+  &.left {
+    text-align: right;
+  }
+}
+
+.timeBarTotal {
+  background: $colorLightSkyBlue;
+  min-width: 90px;
+  height: 6px;
+  border-radius: 3px;
+  margin: 6px;
+  position: relative;
+}
+
+.trackedBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  border-radius: 3px;
+  width: 30%;
+  background-color: $colorAzure;
+}
+
+.elypsisContainer {
+  flex: 1;
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.elypsisButton {
+  display: flex;
+}
+
+.shotsContainerRoot {
+  padding: 0;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.expandSetupIcon {
+  transform: rotate(90deg);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.expanded {
+  transform: rotate(0deg);
+}
+
+.addShotContainer {
+  height: 54px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5%;
+}
+
+.addShotButton {
+  width: 90px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: $colorAzure;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 500;
+  color: $colorWhite;
+}

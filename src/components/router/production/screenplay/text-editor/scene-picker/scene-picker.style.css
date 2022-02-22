@@ -1,0 +1,160 @@
+.scenePicker {
+  width: 238px;
+  background: white;
+  height: 100%;
+  border-right: 1px solid #e9edf1;
+  /* position: absolute;
+  left: 0;
+  top: 0; */
+  /* z-index: 11; */
+  overflow-x: hidden;
+  /* hide scrollbar */
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  display: flex;
+  flex-direction: column;
+  min-width: 238px;
+}
+
+.inputButtonContainer {
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 238px;
+  background: #fafbfc;
+  position: absolute;
+}
+
+.imgSearch {
+  height: 25px;
+  margin: 0px 10px;
+}
+
+.button {
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 0px;
+  color: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputContainer {
+  width: 85%;
+  height: 26px;
+  margin: 10px;
+  margin-right: 0;
+  border: 1.3px solid #707070;
+  border-radius: 3px;
+  padding: 2px 4px;
+  display: flex;
+}
+
+.input {
+  flex: 1;
+  font-size: 14px;
+}
+
+.buttonsContainer {
+  background: white;
+  width: 270px;
+  height: 100%;
+  border-left-color: #d2e0e6;
+  overflow-y: scroll;
+}
+
+.sceneList {
+  width: 238px;
+  border: 1px solid #f9f9f9;
+}
+
+.scene {
+  width: 100%;
+  height: 40px;
+  border-left: solid 6px;
+  border-right: solid 6px;
+}
+
+.sceneCollapsed {
+  height: 25px;
+  padding-left: 10px;
+  border-right: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-top: solid 0.5px #f9f9f9;
+}
+
+.containerCollapsed {
+  justify-content: flex-start;
+  border-top: 0;
+}
+
+.sceneBandLeft {
+  width: 2%;
+  background-color: #d2edcd;
+}
+
+.sceneCode {
+  width: 15%;
+  width: 6px;
+  opacity: 0.4;
+  font-size: 11px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.sceneTitle {
+  width: 75%;
+  opacity: 0.4;
+  font-size: 9px;
+  font-weight: normal;
+}
+
+.sceneTitleBold {
+  font-size: 10px;
+  width: 78%;
+  color: #000000;
+  font-weight: 900;
+}
+
+.sceneBandRight {
+  width: 2%;
+  background-color: #d2edcd;
+}
+
+.imgSearch {
+  height: 20px;
+}
+
+.buttonsContainerShadow {
+  height: 100%;
+  /* padding-top: 46px; */
+}
+
+@media print {
+  .scenePicker {
+    display: none;
+  }
+}

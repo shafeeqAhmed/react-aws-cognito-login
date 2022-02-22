@@ -1,0 +1,33 @@
+.menuButton {
+  min-width: 10px;
+  width: 100%;
+  border-radius: 0;
+  padding: 0;
+}
+
+.menuButton:hover {
+  background-color: transparent;
+}
+
+.menu {
+  width: 125px;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px 0 #2c405a35, inset 0 -1px 0 0 #7e95a7;
+  border: solid 1px #b7d2e5cc;
+  background-color: #fff;
+}
+
+.menuItem {
+  width: 103px;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  color: #626262;
+  height: 35px;
+  padding: 0 14px 0;
+}
+
+.menuItemSelected {
+  background-color: #ecf5fd !important;
+}

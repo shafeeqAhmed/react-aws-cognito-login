@@ -1,0 +1,161 @@
+.modalContainer {
+  width: 560px;
+  min-height: 363px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  flex-grow: 1;
+  border: solid 1px #d8e5ee;
+  padding: 5px;
+}
+
+.folder {
+  display: flex;
+  align-items: center;
+}
+
+.fileIcon {
+  margin-right: 10px;
+  width: 25px;
+}
+
+.fileText {
+  margin-top: 2px;
+}
+
+.footer {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.buttonMove {
+  width: 90px !important;
+  height: 36px !important;
+  border-radius: 4px !important;
+  padding: 0 30px !important;
+  background-color: #0093ee !important;
+  box-shadow: none !important;
+  margin-left: 12px !important;
+}
+
+.buttonLabelMove {
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 500 !important;
+  text-wrap: none;
+  width: 100% !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+
+.buttonDisabled {
+  color: #fff !important;
+  opacity: 0.25;
+}
+
+.buttonCancel {
+  width: 90px !important;
+  height: 36px !important;
+  border-radius: 4px !important;
+  padding: 0 30px !important;
+  background-color: #f2f2f2 !important;
+  box-shadow: none !important;
+  border: solid 1px rgba(0, 0, 0, 0.07) !important;
+}
+
+.buttonLabelCancel {
+  color: #000;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 500 !important;
+  text-wrap: none;
+  width: 100% !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+
+.margin {
+  margin-left: 22px;
+}
+
+.expandIcon  {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.folderName {
+  flex: 1px;
+  align-items: center;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.folderName span {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.selected {
+  background: $colorGrayLight;
+}
+
+.iconContainer {
+  display: flex;
+  margin-right: 8px;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  border: solid 1px #c5d9e8;
+}
+
+.noPoster {
+  background-color: $colorDark;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.poster {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.productionButton {
+  height: 30px;
+}
+
+.production {
+  padding: 5px;
+}
+
+.productionContent {
+  display: flex;
+  align-items: center;
+}
+
+.productionContent span {
+  font-weight: 500;
+}
+
+.productionPoster {
+  margin-right: 5px;
+}

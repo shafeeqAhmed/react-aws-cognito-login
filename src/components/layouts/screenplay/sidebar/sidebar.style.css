@@ -1,0 +1,131 @@
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40px;
+  min-height: 600px;
+  height: 100%;
+  background: $colorCharcoalGrey;
+  padding: 0px;
+  margin: 0px;
+}
+
+.tools {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sideBarTools {
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+}
+
+.button {
+  padding: 0px;
+  margin: 0px;
+  width: 40px;
+  height: 70px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 0px;
+  color: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: initial;
+}
+
+.img {
+  width: 20px;
+  height: 20px;
+}
+
+.imgMenu04ActiveContainer {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #595d6f;
+}
+
+.bottomTools {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.buttonMarginDown {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 15px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 0px;
+  height: 45px;
+}
+
+.buttonMarginDownWithBorder {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 15px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 0px;
+  width: 55px;
+  height: 45px;
+  padding-top: 5px;
+}
+
+.avatar {
+  height: 32px;
+  width: 32px;
+  margin-left: 5px;
+  border-radius: 10px;
+  border: 2px solid;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.walkieButton {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: relative;
+}
+
+.walkieCounter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
+  width: 15px;
+  border-radius: 7px;
+  font-size: 9px;
+  color: #fff;
+  background: #f00;
+  position: absolute;
+  left: 17px;
+  top: 0px;
+}
+
+.walkieIcon {
+  font-size: 25px;
+  color: white;
+}
+
+@media print {
+  .sideBar {
+    display: none;
+  }
+}

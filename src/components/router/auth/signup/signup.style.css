@@ -1,0 +1,335 @@
+.content {
+  height: 770px;
+  position: relative;
+}
+
+.fieldsContainer {
+  height: 250px;
+  width: 500px;
+}
+
+.fieldContainer {
+  display: flex;
+  align-items: flex-end;
+  max-width: 500px;
+  width: 100%;
+  height: 70px;
+}
+
+.field  {
+  font-weight: 500 !important;
+}
+
+.nextButton {
+  color: #4a90e2 !important;
+  border: 2px solid #4a90e2 !important;
+  width: 90px !important;
+  padding: 5px !important;
+  border-radius: 4px !important;
+  margin-top: 40px !important;
+  font-weight: 500 !important;
+  height: 40px !important;
+}
+
+.nextButtonDisabled {
+  opacity: 0.5 !important;
+}
+
+.messageError {
+  margin-top: 20px;
+  color: $colorRed;
+}
+
+.editAvatarContainer {
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.avatarContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+.avatarButton {
+  align-self: flex-start;
+}
+
+.editControls {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+  position: relative;
+  height: 100px;
+  width: 250px;
+}
+
+.editAvatarLabel {
+  font-size: 12px;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customFileInput {
+  height: 30px;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.customFileInput input {
+  position: relative;
+  height: 30px;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.customFileInput:before {
+  content: "Choose File";
+  display: block;
+  border: 2px solid #000;
+  padding: 5px 0px;
+  outline: none;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  border: none;
+  color: #4a90e2;
+  background: $colorWhiteFaded;
+}
+
+.submitBtn {
+  color: #4a90e2;
+  font-weight: 500;
+}
+
+.editAvatarText {
+  font-size: 1.3rem;
+  color: #848484;
+  margin-top: 4px;
+  text-align: left;
+  height: 40px;
+  width: 100%;
+}
+
+.editAvatarTextEdit {
+  width: 70px;
+  text-align: center;
+}
+
+.helpText {
+  font-size: 14px;
+  color: $colorGray;
+  margin-top: 10px;
+}
+
+.socialContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+  margin-top: 40px;
+}
+
+.socialIcon {
+  background-color: #5bafde;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialIcon img {
+  width: 30px;
+}
+
+.orText  {
+  margin: 20px 0;
+  font-size: 14px;
+  height: 20px;
+}
+
+/* Input range */
+.inputRange {
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+.inputRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.inputRange:focus {
+  outline: none;
+}
+
+.inputRange::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.inputRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  background: #4a90e2;
+  cursor: pointer;
+  margin-top: -6px;
+}
+
+.inputRange::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  background: #4a90e2;
+  cursor: pointer;
+}
+
+.inputRange::-ms-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  background: #4a90e2;
+  cursor: pointer;
+}
+
+.inputRange::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: $colorGrayLight;
+  border-radius: 3px;
+}
+
+.inputRange:focus::-webkit-slider-runnable-track {
+  background: $colorGrayLight;
+}
+
+.inputRange::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: $colorGrayLight;
+  border-radius: 3px;
+}
+
+.inputRange::-ms-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.inputRange::-ms-fill-lower {
+  background: #4a90e2;
+  border-radius: 3px;
+}
+.inputRange:focus::-ms-fill-lower {
+  background: #4a90e2;
+}
+.inputRange::-ms-fill-upper {
+  background: #4a90e2;
+  border-radius: 3px;
+}
+.inputRange:focus::-ms-fill-upper {
+  background: #4a90e2;
+}
+
+.pagination {
+  display: flex;
+  width: 44px;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 2vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.step {
+  width: 6px;
+  height: 6px;
+  opacity: 0.5;
+  background-color: #57aee0;
+  border-radius: 3px;
+}
+
+.stepActive {
+  opacity: 1;
+}
+
+.dialog  {
+  position: relative;
+  overflow: visible !important;
+}
+
+.dialogContainer {
+  padding: 64px 70px 0;
+  text-align: center;
+  min-height: 280px;
+  min-width: 440px;
+}
+
+.dialogEmail {
+  font-size: 28px;
+  letter-spacing: -0.5px;
+  color: #173643;
+}
+
+.dialogQuestion {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #173643;
+}
+
+.dialogButtonsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.editButton {
+  color: #4a90e2 !important;
+  border: 2px solid #4a90e2 !important;
+  width: 80px !important;
+  padding: 5px !important;
+  border-radius: 4px !important;
+  margin-top: 40px !important;
+  font-weight: 500 !important;
+  margin-right: 10px !important;
+  height: 40px !important;
+  width: 90px !important;
+}
+
+.confirmButton {
+  color: #fff !important;
+  background: #4a90e2 !important;
+  width: 80px !important;
+  padding: 5px !important;
+  border-radius: 4px !important;
+  margin-top: 40px !important;
+  font-weight: 500 !important;
+  margin-left: 10px !important;
+  height: 40px !important;
+  width: 90px !important;
+}
+
+.closeButton {
+  position: absolute;
+  top: -60px;
+  right: 0;
+}

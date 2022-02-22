@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>F7B44B15-67A3-4B59-842A-578111F66FF4</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0 17 14.408 17 14.408 0 0 0"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-/-Drive-/-Trash-/-28">
+            <g id="Group-11" transform="translate(7.000000, 5.000000)">
+                <path d="M12.5747,4.8549 L12.2117,15.4569 C12.2117,16.0309 11.7417,16.4999 11.1687,16.4999 L3.2397,16.4999 C2.6657,16.4999 2.1967,16.0309 2.1967,15.4569 L1.8327,4.8549 L12.5747,4.8549 Z" id="Stroke-1" stroke="#FFFFFF"></path>
+                <path d="M7.2041,7.6816 L7.2041,13.3836" id="Stroke-3" stroke="#FFFFFF" stroke-linecap="round"></path>
+                <path d="M4.7715,7.6816 L4.7715,13.3836" id="Stroke-5" stroke="#FFFFFF" stroke-linecap="round"></path>
+                <path d="M9.6367,7.6816 L9.6367,13.3836" id="Stroke-7" stroke="#FFFFFF" stroke-linecap="round"></path>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-10"></g>
+                <polygon id="Stroke-9" stroke="#FFFFFF" mask="url(#mask-2)" points="0.5 4.922 13.908 4.922 13.908 3.211 0.5 3.211"></polygon>
+                <path d="M4.0029,3.3174 L4.0029,1.7724 C4.0029,1.0724 4.5759,0.5004 5.2749,0.5004 L9.1319,0.5004 C9.8319,0.5004 10.4049,1.0724 10.4049,1.7724 L10.4049,3.3174" id="Stroke-11" stroke="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

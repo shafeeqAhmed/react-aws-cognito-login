@@ -1,0 +1,72 @@
+.root {
+  display: "flex";
+  z-index: 99999;
+}
+
+.buttonTitle {
+  font-size: 12px;
+  font-weight: normal;
+  color: #394656;
+}
+
+.paper {
+  margin-right: 10px;
+}
+
+.popperClose {
+  pointer-events: "none";
+}
+
+.menu {
+  min-width: 200px;
+  z-index: 99999;
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: stretch;
+  z-index: 99999;
+  width: 100%;
+}
+
+.unitSelected {
+}
+
+.unitPickerIcon {
+  fill: #62707f;
+  width: 23px;
+  margin: 0 6px;
+}
+
+.buttonUnit {
+  padding: 8px 6px !important;
+}
+
+.dropDownIcon {
+  width: 16px;
+}
+
+.unitGutterLeft {
+  width: 20%;
+}
+
+.unitGutterRight {
+  width: 20%;
+}
+
+.unitTitle {
+  width: 60%;
+}
+
+.newUnitMenuItem {
+}
+
+.newUnitInput {
+  width: 100%;
+}
+
+.gutterIcon {
+  transform: scale(0.7);
+}

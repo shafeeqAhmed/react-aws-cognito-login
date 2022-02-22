@@ -1,0 +1,72 @@
+.appbar {
+  height: 60px;
+  background-color: #2a044a;
+  z-index: 1201;
+}
+
+.logo {
+  width: 70px;
+  height: 100%;
+  display: flex;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0;
+  margin: 0 10px 0 0;
+}
+
+.menuButton {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px;
+  padding: 0;
+  margin: 0;
+}
+
+.menuButtonLabel {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 2px;
+}
+
+.logoImage {
+  max-height: 35px;
+}
+
+.toolbarButtonRoot {
+  height: 100%;
+  margin: 0 10px 0 10px;
+  padding: 0;
+}
+
+.toolbarButtonLabel {
+  color: white;
+  opacity: 0.75;
+  text-transform: none;
+  font-size: 16px;
+}
+
+.toolbarButtonLabelActive {
+  color: white;
+  font-weight: bold;
+  text-transform: none;
+  font-size: 16px;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.userMenuButton {
+  margin-right: 10px;
+}
+
+.userMenuIcon {
+  transform: rotate(90deg);
+  color: white;
+}

@@ -1,0 +1,198 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: $colorWhite;
+}
+
+.sidebarTop {
+  padding: 1.5rem;
+  padding-right: 3rem;
+  border-radius: 4px;
+  min-height: 175px;
+}
+
+.sidebarTopHeadline {
+  @mixin font-size 14;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.sidebarTopTitle {
+  @mixin font-size 13;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.sidebarTopSummary {
+  @mixin font-size 12;
+  margin-top: 1rem;
+}
+
+.sidebarDetails {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px $colorSilver;
+  border-top: none;
+  padding: 1rem 1.5rem;
+  overflow-y: scroll;
+}
+
+.sidebarSeparator {
+  width: 100%;
+  height: 1px;
+  border: solid 1px $colorSilver;
+  margin: 1rem 0;
+}
+
+.sidebarGlance {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebarGlanceBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebarGlanceTitle {
+  @mixin font-size 12;
+  color: $colorBattleshipGrey;
+}
+
+.sidebarGlanceValue {
+  @mixin font-size 18;
+  font-weight: 500;
+}
+
+.sidebarSection {
+}
+
+.sidebarSectionTitle {
+  @mixin font-size 13;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $colorBattleshipGrey;
+  margin-bottom: 0.25rem;
+}
+
+.sidebarSectionValue {
+  @mixin font-size 13;
+  color: $colorBattleshipGrey;
+  line-height: 1.8em;
+}
+
+/* Sidebar/search */
+.search {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px $colorSilver;
+  border-top: none;
+  overflow-y: scroll;
+  max-height: calc(100vh - 107px);
+}
+
+.searchScrollContainer {
+}
+
+.result {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: solid 4px;
+  margin: 0.5rem;
+}
+
+.resultTop {
+  display: flex;
+  align-items: center;
+}
+
+.resultHandle {
+  @mixin font-size 14;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 70%;
+  padding: 0.5rem;
+
+  img {
+    margin-right: 0.5rem;
+    margin-bottom: 0.1rem;
+    height: 12px;
+  }
+}
+
+.resultTime {
+  @mixin font-size 13;
+  width: 30%;
+  text-align: center;
+}
+
+.resultTitle {
+  @mixin font-size 14;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.resultSummary {
+  @mixin font-size 12;
+  padding: 0 0.5rem;
+}
+
+.resultBottom {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.resultBottomLeft {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+
+.resultBottomRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+
+.resultPages {
+  @mixin font-size 13;
+}
+
+.resultDuration {
+  @mixin font-size 13;
+}
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.number {
+  @mixin font-size 12;
+  color: $colorWhite;
+  background-color: $colorBattleshipGrey;
+  border-radius: 1rem;
+  padding: 0.1rem 0.4rem;
+  margin: 0.2rem;
+}
+
+.pages {
+  @mixin font-size 12;
+  color: $colorBattleshipGrey;
+}
+
+.time {
+  @mixin font-size 12;
+  color: $colorBattleshipGrey;
+}

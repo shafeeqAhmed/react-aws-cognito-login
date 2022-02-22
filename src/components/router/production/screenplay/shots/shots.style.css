@@ -1,0 +1,25 @@
+.shots {
+  flex: 1;
+  background-color: $colorWhite;
+  min-width: 870px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightSidebar {
+  width: 365px;
+  border-left: 1px solid $colorCloudyBlue;
+  overflow: scroll;
+}

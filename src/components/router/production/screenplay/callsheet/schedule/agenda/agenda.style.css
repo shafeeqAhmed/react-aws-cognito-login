@@ -1,0 +1,217 @@
+.agenda {
+  width: 100%;
+  overflow-x: scroll;
+  padding-top: 87px;
+  position: relative;
+  flex-grow: 1;
+}
+
+.hour {
+  height: 87px;
+  display: flex;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 1px;
+    position: absolute;
+    left: 60px;
+    right: 0;
+    border-top: solid 1px $colorSoftGrey;
+  }
+
+  span {
+    position: absolute;
+    width: 60px;
+    top: -9px;
+    font-size: 12px;
+    color: $colorOpaqueBlue;
+    text-align: right;
+    padding-right: 9px;
+  }
+}
+
+.event {
+  position: absolute;
+  margin-left: 60px;
+  margin-top: 3px;
+  display: flex;
+
+  .eventLeftColumn {
+    width: 115px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    color: $colorOpaqueWhite;
+    padding-left: 15px;
+    line-height: 1.4;
+  }
+
+  .eventContent {
+    width: 350px;
+    color: $colorWhite;
+    display: flex;
+  }
+
+  .darkText  {
+    color: $colorOpaqueBlue;
+  }
+
+  .contentLeft {
+    width: 70px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 2px 7px;
+  }
+
+  .contentRight {
+    padding-top: 7px;
+  }
+
+  .title {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  .info {
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 1.2;
+  }
+
+  &.withFromLocation  {
+    .eventLeftColumn {
+      display: none;
+    }
+    .eventContent {
+      width: 450px;
+      margin-left: 15px;
+    }
+  }
+
+  &.isFixed {
+    .eventContent {
+      width: 368px;
+    }
+  }
+}
+
+.callTimeContainer {
+  position: absolute;
+  left: 60px;
+  right: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: $colorDarkSkyBlue;
+    width: 100%;
+    left: 0;
+  }
+
+  .callTime {
+    position: absolute;
+    left: 0;
+    height: 19px;
+    width: 54px;
+    background-color: $colorDarkSkyBlue;
+    bottom: 100%;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    font-size: 9px;
+    font-weight: 500;
+    color: $colorWhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .time {
+    position: absolute;
+    top: -34px;
+    width: 54px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 500;
+    color: $colorAzure;
+  }
+}
+
+.currentTime {
+  position: absolute;
+  width: 100%;
+  color: $colorPinkishRed;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 60px;
+    height: 1px;
+    background-color: $colorPinkishRed;
+    right: 0;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: $colorPinkishRed;
+    left: 60px;
+    border-radius: 50%;
+    top: -3px;
+  }
+  span {
+    position: absolute;
+    font-size: 11px;
+    font-weight: normal;
+    top: -8px;
+    left: 6px;
+  }
+}
+
+.wrapGoalContainer {
+  position: absolute;
+  left: 60px;
+  right: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: $colorPinkishRed;
+    width: 100%;
+    left: 0;
+  }
+
+  .wrapGoal {
+    position: absolute;
+    left: 0;
+    height: 19px;
+    width: 54px;
+    background-color: $colorPinkishRed;
+    font-size: 9px;
+    font-weight: 500;
+    color: $colorWhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    top: -9px;
+    z-index: 1;
+  }
+
+  .time {
+    position: absolute;
+    top: 12px;
+    width: 54px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 500;
+    color: $colorPinkishRed;
+  }
+}

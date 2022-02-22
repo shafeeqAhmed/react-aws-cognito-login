@@ -1,0 +1,65 @@
+.timeCell {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  border-bottom-style: solid;
+}
+
+.cellText {
+  font-size: 12px;
+}
+
+.soundWave {
+}
+
+.soundDuration {
+  min-width: 32px;
+  margin-left: 10px;
+}
+
+.playSoundButton {
+  transform: scale(0.7);
+  margin-left: -10px;
+  z-index: 999;
+}
+
+.playSoundImage {
+}
+
+.tags {
+  padding: 2.5px;
+}
+
+.horizontalScroll {
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.tagChip {
+  margin: 2.5px;
+}
+
+.menuCell {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  justify-items: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
+.rowMenuButton {
+  transform: scale(0.8);
+}

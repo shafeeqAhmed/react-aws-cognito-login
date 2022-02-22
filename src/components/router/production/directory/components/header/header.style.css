@@ -1,0 +1,18 @@
+.header {
+  height: 60px;
+  max-height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.title {
+  font-size: 28px;
+  color: #313d4a;
+  padding-left: 20px;
+  font-weight: 400;
+  line-height: 44px;
+  height: 44px;
+  text-transform: capitalize;
+}

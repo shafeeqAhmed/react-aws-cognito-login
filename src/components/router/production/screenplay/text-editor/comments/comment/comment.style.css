@@ -1,0 +1,235 @@
+.container  {
+  padding: 2px 6px 10px;
+  border-left: 5px solid #e3e3e3;
+  position: absolute;
+  margin-left: 20px;
+  width: 280px;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: Roboto;
+  padding-right: 12px;
+}
+
+.avatar {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background: #43c;
+  font-family: Roboto;
+  margin-right: 4px;
+}
+
+.name {
+  font-size: 12px;
+  font-weight: 500;
+  color: #5767a4;
+  margin-right: 5px;
+}
+
+.grayText {
+  font-size: 11px;
+  color: #a9a9a9;
+  margin-right: 5px;
+  flex-grow: 1;
+  margin-top: 2px;
+}
+
+.textBar {
+  width: 215px;
+  margin-left: 16px;
+  border-radius: 3px !important;
+  border: solid 1px #c0c0c0 !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resolveText {
+  width: 52px;
+  justify-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resolveText span {
+  font-size: 11px;
+  font-weight: 500;
+  color: #dddddd;
+}
+
+.resolveHover {
+  font-size: 11px;
+  font-weight: 500;
+  text-align: right;
+  color: #979797;
+}
+
+.resolveHover span {
+  color: #979797;
+}
+.elypsisButton {
+  padding: 0 !important;
+  width: 10px !important;
+  min-width: 10px !important;
+  height: 10px !important;
+  min-height: 10px !important;
+}
+
+.elypsisIcon {
+  height: 12px;
+}
+
+.message {
+  margin-bottom: 5px;
+  padding-left: 17px;
+  font-size: 12px;
+  color: $colorDark;
+  line-height: 1.2;
+  padding-right: 21px;
+
+  span {
+    height: 15px;
+    border-radius: 3px;
+    background-color: #ecf5fd;
+    font-weight: 500;
+    color: #6e8af4;
+  }
+}
+
+.repliesNumberContainer {
+  width: 100%;
+  text-align: right;
+  padding-right: 16px;
+}
+
+.repliesNumber {
+  font-size: 11px;
+  font-weight: 500;
+  color: #979797;
+}
+
+.repliesContainer {
+  padding-left: 17px;
+}
+
+.input {
+  width: 142px !important;
+  max-width: 160px;
+  font-size: 12px !important;
+  padding: 3px 5px !important;
+
+  textarea {
+    border: none;
+    width: 96% !important;
+    padding-top: 4px;
+  }
+}
+
+.inputLarge {
+  width: 231px !important;
+  margin-left: 0px !important;
+}
+
+.sendMessageButton {
+  width: 31px;
+  height: 26px;
+  border-radius: 3px;
+  background-color: #efefef;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.tickIcon  {
+  width: 11px;
+}
+
+.iconsContainer {
+  position: absolute;
+  right: 62px;
+  width: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputButton {
+}
+
+.inputIcon {
+  width: 12px;
+}
+
+.userMention {
+  padding: 0 2px;
+  font-weight: 500;
+  border-radius: 3px;
+  background-color: #ecf5fd;
+}
+
+.userSuggestion {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.4);
+  width: 204px;
+}
+
+.suggestionHeader {
+  font-weight: 500;
+  padding: 8px;
+  color: $colorDark;
+  border-bottom: 1px solid #e8e8e8;
+  line-height: 1.7;
+}
+
+.userSuggestionImg {
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.userSuggestionName {
+  color: #0296f1;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.userSuggestionRole {
+  color: #979797;
+}
+
+.userSuggestionAvatar {
+  width: 20px;
+  height: 20px;
+  background-color: $colorDark;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.highlighted {
+  background-color: #0296f1;
+
+  .userSuggestionName,
+  .userSuggestionRole {
+    color: #fff;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.showPrevious {
+  background: #6e8af4;
+  margin-left: -10px;
+  width: 278px;
+  height: 18px;
+  font-size: 12px;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.rightSidebar {
+  width: 272px;
+}

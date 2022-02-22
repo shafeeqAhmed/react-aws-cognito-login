@@ -1,0 +1,38 @@
+.shotlist {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+.section {
+  .title {
+    height: 50px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    color: $colorBlack;
+    border-bottom: 1px solid #d8d8d8;
+    border-top: 1px solid #d8d8d8;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+  }
+}
+
+.newSetupContainer {
+  height: 54px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5%;
+}
+
+.newSetupButton {
+  width: 90px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: $colorAzure;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 500;
+  color: $colorWhite;
+}

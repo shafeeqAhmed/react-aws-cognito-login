@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Template> renders the Template content 1`] = `
+<div
+  className="template"
+>
+  This is the url: 
+  <br />
+  Test
+</div>
+`;

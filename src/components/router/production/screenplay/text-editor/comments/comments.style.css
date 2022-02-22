@@ -1,0 +1,48 @@
+.container {
+  position: relative;
+  overflow: scroll;
+  height: 100%;
+  z-index: 12;
+  width: 300px;
+  padding-right: 20px;
+  font-family: Roboto;
+  left: -22px;
+  background-color: #fff;
+
+  *,
+  *:before,
+  *:after {
+    font-family: Roboto;
+  }
+}
+
+.container {
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+/*
+.container::before {
+  content: " ";
+  position: absolute;
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  background-color: #e9edf1;
+}
+ */
+
+.newComment {
+  position: absolute;
+  margin-left: 20px;
+  width: 280px;
+}
+
+.addCommentButton {
+  z-index: 2;
+  padding: 0;
+}

@@ -1,0 +1,176 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.rightSidebar {
+  width: 272px;
+}
+
+.header {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h2 {
+    font-family: DIN;
+    font-size: 22px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.82;
+    letter-spacing: normal;
+    color: $colorVeryDark;
+    margin: 0;
+  }
+
+  .filters {
+    display: flex;
+    align-items: center;
+  }
+
+  .filterContainer {
+    display: flex;
+    align-items: baseline;
+    margin-left: 20px;
+  }
+
+  .filterName {
+    font-family: DIN;
+    font-size: 15px;
+    color: $colorVeryDark;
+  }
+
+  .filterButton {
+    padding: 0 !important;
+    width: 50px !important;
+    min-width: 50px !important;
+    height: 24px !important;
+    min-height: 24px !important;
+    text-transform: none !important;
+  }
+
+  .filterButtonLabel {
+    font-weight: 500 !important;
+    font-size: 15px !important;
+    font-family: DIN;
+    font-size: 15px;
+    color: $colorVeryDark;
+  }
+
+  .arrowIcon {
+    font-size: 18px !important;
+  }
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 10px;
+
+  thead {
+    border-bottom: solid 1px $colorSilver;
+
+    tr {
+      height: 24px;
+
+      th {
+        font-family: Roboto;
+        font-size: 11px;
+        font-weight: 500;
+        color: $colorVeryDark;
+
+        &.related {
+          min-width: 44px;
+        }
+        &.item {
+          min-width: 95px;
+          width: 14%;
+        }
+        &.supplier {
+          min-width: 107px;
+        }
+        &.callTime {
+          min-width: 56px;
+          text-align: center;
+        }
+        &.notes {
+          min-width: 200px;
+          padding-left: 45px;
+        }
+        &.status {
+          min-width: 80px;
+          width: 15%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      font-family: Roboto;
+      height: 30px;
+
+      &.late {
+        background-color: rgba(255, 0, 11, 0.1);
+      }
+
+      td  {
+        vertical-align: baseline;
+      }
+
+      td:first-child  {
+        width: 48px;
+        text-align: right;
+        padding-right: 9px;
+
+        span {
+          height: 16px;
+          min-width: 16px;
+          border-radius: 8px;
+          padding: 3px 6px;
+          background: blue;
+          color: $colorWhite;
+          font-family: DIN;
+          font-size: 8.3px;
+          font-weight: bold;
+          text-align: center;
+        }
+      }
+
+      .item,
+      .callTime {
+        font-size: 12px;
+        font-weight: 500;
+        color: $colorVeryDark;
+      }
+
+      .supplier,
+      .notes,
+      .status {
+        font-size: 11px;
+        font-weight: normal;
+        color: $colorVeryDark;
+      }
+
+      .callTime {
+        text-align: center;
+      }
+
+      .notes {
+        padding-left: 45px;
+      }
+
+      .status {
+        font-weight: 300;
+        text-align: center;
+      }
+    }
+  }
+}

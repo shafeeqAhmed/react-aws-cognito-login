@@ -1,0 +1,141 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  padding: 2rem;
+  background-color: $colorGrassGreen;
+}
+
+.formAndLogo  {
+}
+
+.uploadImage {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.uploadImageText {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-family: HelveticaNeue-Light;
+  font-weight: 100;
+  margin-left: 2%;
+}
+
+.logo2 {
+  height: 40px;
+}
+
+.rightSide {
+  width: 40%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $colorGreenTwo;
+}
+
+.topSide {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid $colorWhite;
+  border-radius: 0px;
+  color: $colorWhite;
+}
+
+.cancelText {
+  color: $colorWhite;
+  font-size: 1.2rem;
+  font-family: HelveticaNeue-Light;
+  font-weight: 100;
+  margin-left: 10px;
+}
+
+.phoneImage {
+  max-height: 80vh;
+  max-width: 90%;
+}
+
+.rightBottomSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+.title {
+  color: $colorWhite;
+  font-size: 1.8rem;
+  font-family: HelveticaNeue-Light;
+  font-weight: 100;
+}
+
+.avatar {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 15px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  height: 60px;
+}
+
+.inputLeft {
+  width: 75%;
+}
+
+.approveImage {
+  width: 20px;
+}
+
+.inputRight {
+  width: 15%;
+}
+
+.icon {
+  font-size: 35px;
+  color: $colorWhite;
+}
+
+.avatarDefault {
+  font-size: 120px;
+  color: $colorWhite;
+}
+
+.underlineStyle {
+  border-color: $colorWhite;
+}
+
+.bottomBox {
+  width: 2rem;
+  height: 3.5rem;
+}

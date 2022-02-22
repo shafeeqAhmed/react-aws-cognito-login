@@ -1,0 +1,49 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 100%;
+  height: 60px;
+  min-height: 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d8e5ee;
+  padding-left: 34px;
+}
+
+.link {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+
+  &:hover, &:focus, &:active {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+  }
+}
+
+.production {
+  color: #394656;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.folder {
+  color: #394656;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.subfolder {
+  color: #98a2ab;
+}
+
+.divider {
+  color: #98a2ab;
+  fill: #98a2ab;
+  transform: scale(0.85);
+  margin-top: 4px;
+}

@@ -1,0 +1,64 @@
+.inputContainer {
+  margin-top: -5px;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: stretch;
+}
+
+.inputRoot {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #4a4a4a;
+  width: 75%;
+}
+
+.input {
+  padding: 4px 0 0 0;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 15px;
+  width: 15%;
+  min-width: 15%;
+  text-align: right;
+}
+
+.focused {
+  background-color: #fffcde;
+}
+
+.icon {
+  transform: scale(0.7);
+  padding-top: 4px;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+.blueIcon {
+  transform: scale(0.8);
+  padding-top: 3px;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+.menu {
+}
+
+.paper {
+  display: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+  margin-top: 5px;
+}
+
+.elementName {
+  font-size: 12px;
+}

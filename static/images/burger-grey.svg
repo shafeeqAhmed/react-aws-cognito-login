@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="burger-grey" fill-rule="nonzero" fill="#BAB9BA">
+            <path d="M0,10 L0,8.571 L10,8.571 L10,10 L0,10 Z M0,1.429 L0,0 L10,0 L10,1.429 L0,1.429 Z M0,5.714 L0,4.286 L10,4.286 L10,5.714 L0,5.714 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

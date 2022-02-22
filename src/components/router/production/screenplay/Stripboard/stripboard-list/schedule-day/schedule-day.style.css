@@ -1,0 +1,89 @@
+.expansionRoot {
+}
+
+.summary {
+  background-color: $colorPaleGreyTwo;
+}
+
+.summaryExpanded {
+  /* Not working https://stackoverflow.com/q/52725047/1510454
+  margin: 10px 0;
+   */
+}
+
+.summaryContent {
+  margin: 1rem 0;
+  align-items: center;
+}
+
+.date {
+  @mixin font-size 14;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.dayOf {
+  @mixin font-size 12;
+  color: $colorAzure;
+  display: block;
+  line-height: 0.6em;
+}
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.number {
+  @mixin font-size 12;
+  color: $colorWhite;
+  background-color: $colorBattleshipGrey;
+  border-radius: 1rem;
+  padding: 0.1rem 0.4rem;
+  margin: 0.2rem;
+}
+
+.bg {
+  @mixin font-size 12;
+  color: $colorBattleshipGrey;
+}
+
+.pages {
+  @mixin font-size 12;
+  color: $colorBattleshipGrey;
+}
+
+.time {
+  @mixin font-size 12;
+  color: $colorBattleshipGrey;
+}
+
+.detailsRoot {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.fifty {
+  width: 50%;
+}
+.forty {
+  width: 40%;
+}
+.thirtyFive {
+  width: 35%;
+}
+.thirty {
+  width: 30%;
+}
+.twenty {
+  width: 20%;
+}
+.ten {
+  width: 10%;
+}
+.five {
+  width: 5%;
+}

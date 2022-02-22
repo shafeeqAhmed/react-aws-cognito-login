@@ -1,0 +1,41 @@
+.fieldContainer {
+  width: 100%;
+}
+
+.error {
+  color: $colorRed;
+}
+
+.helpText {
+  font-size: 14px;
+  margin-top: 20px;
+  color: $colorGray;
+}
+
+.nextButton {
+  color: #4a90e2 !important;
+  border: 2px solid #4a90e2 !important;
+  padding: 5px 20px !important;
+  border-radius: 4px !important;
+  margin-top: 50px !important;
+  font-weight: 500 !important;
+}
+
+.nextButtonDisabled {
+  opacity: 0.5 !important;
+}
+
+.signinButton {
+  border: none;
+  margin-top: 2rem;
+  padding: 0;
+  color: $colorTheme;
+  font-size: 1.1rem;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}

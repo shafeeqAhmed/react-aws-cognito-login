@@ -1,0 +1,187 @@
+.container {
+  height: 44px;
+  background-color: #54c08a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+
+  *,
+  *:before,
+  *:after {
+    font-family: Roboto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.editable:focus {
+  background-color: #fff !important;
+  color: #4f4f4f;
+  padding: 4px;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.sceneCode {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 29px;
+}
+
+.site,
+.sceneName,
+.timeOfDay {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 13px;
+  padding: 2px;
+}
+
+.sceneDescription,
+.location  {
+  font-size: 11px;
+  font-weight: normal;
+  padding: 2px;
+}
+
+.pages,
+.time {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px;
+}
+
+.cast {
+  height: 15px;
+  border-radius: 7.5px;
+  background-color: #fff;
+  color: #54c08a;
+  text-align: center;
+  padding: 1.5px 4.5px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.cast span {
+  font-size: 10px;
+  font-family: DIN;
+  font-weight: bold;
+}
+
+.location {
+  white-space: pre-wrap;
+  line-height: 12px;
+}
+
+.locationIcon {
+  width: 20px;
+  margin-right: 2px;
+}
+
+.sceneCode {
+  width: 7.5%;
+  text-align: center;
+}
+
+.site {
+  width: 6.5%;
+  text-align: center;
+}
+
+.descriptionContainer {
+  width: 28%;
+  margin-left: 6px;
+  overflow: visible;
+}
+
+.descriptionFocused {
+  overflow: visible;
+
+  .sceneName {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .sceneDescription {
+    position: relative;
+    left: 0;
+    top: 14px;
+    overflow: hidden;
+  }
+}
+
+.sceneName:focus  {
+  white-space: pre-wrap;
+  text-overflow: none;
+  position: absolute;
+  left: 0;
+  top: -4px;
+}
+
+.sceneDescription:focus {
+  white-space: pre-wrap;
+  text-overflow: none;
+  position: absolute;
+  left: 0;
+  top: 14px;
+}
+
+.timeOfDay {
+  width: 10%;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.castContainer {
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.locationContainer {
+  width: 24%;
+  display: flex;
+  align-items: center;
+}
+
+.pages {
+  width: 6%;
+  text-align: center;
+}
+
+.time {
+  width: 6%;
+  text-align: center;
+}
+
+.menuIconContainer {
+  width: 2%;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.menuIconContainer img {
+  width: 4px;
+}
+
+.site:not(:focus):hover,
+.sceneName:not(:focus):hover,
+.sceneDescription:not(:focus):hover,
+.timeOfDay:not(:focus):hover,
+.location:not(:focus):hover,
+.pages:not(:focus):hover,
+.time:not(:focus):hover,
+.menuIconContainer:not(:focus):hover {
+  border-radius: 1px;
+  background-color: rgba(216, 216, 216, 0.3);
+}

@@ -1,0 +1,95 @@
+@import "./spellchecker/spellchecker.style.css";
+@import "./search/search.style.css";
+
+.editor {
+  flex: $flexWidthScreenplayContent;
+  min-height: 500px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /* justify-content: center; */
+  justify-content: space-between;
+  background-color: $colorWhiteFour;
+}
+
+.screenplayContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+  border-left: 1px solid #dae5ed;
+  z-index: 10;
+  /* background-color: #fff; */
+  /* max-width: 8.5in; */
+
+  flex-grow: 1;
+  justify-content: space-between;
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 1s, opacity 1s linear;
+  background-color: #f9f9f9;
+}
+
+.hidden {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.hidden > *:nth-child(2) {
+  /* opacity: 0; */
+  display: none;
+}
+
+.content > * {
+  width: 8.5in;
+  height: 100%;
+}
+
+:global {
+  .CodeMirror-line pre,
+  .CodeMirror-line *,
+  .CodeMirror-line *::before,
+  .CodeMirror-line *::after {
+    font-family: CourierPrime;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .firepad-lc-pc-scene,
+  .firepad-lc-pc-scene *,
+  .firepad-lc-pc-scene::before,
+  .firepad-lc-pc-scene::after {
+    font-weight: bold;
+  }
+}
+
+.rightSideBar {
+  /* width: 300px; */
+  /* height: 100%; */
+  /* background: $colorWhite; */
+  /* z-index: 11; */
+  /* position: relative; */
+
+  width: 224px;
+  min-width: 224px;
+  overflow-y: scroll;
+}

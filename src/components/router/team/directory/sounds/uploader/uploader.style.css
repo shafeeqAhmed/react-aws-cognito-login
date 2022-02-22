@@ -1,0 +1,146 @@
+.root {
+  position: absolute;
+  bottom: 26px;
+  left: 26px;
+  right: 26px;
+}
+
+.paper {
+  width: 100%;
+  height: 100%;
+  background-color: #38b3fe;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.overview {
+  width: 100%;
+  height: 44px;
+  background-color: #38b3fe;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+}
+
+.title {
+  font-size: 15px;
+  padding-left: 1em;
+  padding-right: 1em;
+  min-width: 103px;
+}
+
+.titleText {
+  font-size: 15px;
+  text-align: center;
+  color: white;
+}
+
+.progressBar {
+  width: 72%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.progressBarDeterminate {
+  /* background-color: rgba(255, 255, 255, 1) !important; */
+}
+
+.progressBar1Determinate {
+  /* background-color: white; */
+  background-color: rgba(255, 255, 255, 1) !important;
+}
+
+.progressBar2Indeterminate {
+  background-color: rgba(217, 236, 255, 0.1) !important;
+  /* background-color: rgba(217, 236, 255, 0.4); */
+  /* background-color: rgba(255, 255, 255, 1) !important; */
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.buttonIconOuter {
+  transform: scale(0.8);
+}
+
+.buttonIconInner {
+  transform: scale(1.2);
+  color: white;
+  fill: white;
+}
+
+.buttonIconChevron {
+  margin-right: -10px;
+}
+
+.uploads {
+  width: 100%;
+  overflow: auto;
+  max-height: calc(5 * 48px);
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.table {
+  width: 100%;
+}
+
+.tableRow {
+  height: 48px;
+  width: 100%;
+}
+
+.fileNameTableCell {
+  width: 65%;
+}
+
+.fileName {
+  font-size: 15px;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: white;
+}
+
+.fileSizeTableCell {
+  width: 30%;
+}
+
+.fileSize {
+  font-size: 15px;
+  color: white;
+}
+
+.progressTableCell {
+  width: 5%;
+}
+
+.progress {
+  font-size: 15px;
+  text-align: right;
+  color: white;
+}
+
+.actionsTableCell {
+  width: 10%;
+}
+
+.closeActionButton {
+  transform: scale(0.8);
+}
+
+.closeActionIcon {
+  transform: scale(1.2);
+  color: white;
+  fill: white;
+}

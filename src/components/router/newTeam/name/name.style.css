@@ -1,0 +1,44 @@
+.content {
+  height: 330px;
+  position: relative;
+  padding-top: 30px;
+}
+
+.fieldContainer {
+  display: flex;
+  align-items: flex-end;
+  max-width: 600px;
+}
+
+.field  {
+  font-weight: 500 !important;
+}
+
+.helpText {
+  font-size: 14px;
+  color: $colorGray;
+}
+
+.helpText span {
+  color: #000;
+  font-weight: 500;
+}
+
+.nextButton {
+  color: #4a90e2 !important;
+  border: 2px solid #4a90e2 !important;
+  width: 90px !important;
+  padding: 5px !important;
+  border-radius: 4px !important;
+  margin-top: 38px !important;
+  font-weight: 500 !important;
+}
+
+.nextButtonDisabled {
+  opacity: 0.5 !important;
+}
+
+.messageError {
+  margin-top: 20px;
+  color: $colorRed;
+}

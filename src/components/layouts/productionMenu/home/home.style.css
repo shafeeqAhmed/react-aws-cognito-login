@@ -1,0 +1,81 @@
+.container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.option {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  border: none;
+  color: $colorDark;
+}
+.optionName {
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.icon {
+  margin-right: 10px;
+  font-size: 1.7rem;
+}
+
+.options {
+  padding: 0 30px;
+}
+.divider {
+  background-color: $colorGreenLightTwo;
+  font-size: 0.8rem;
+  font-weight: 100;
+  color: $colorGray;
+  padding: 2px 8px;
+}
+.footerOption {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 10px 15px;
+  border-bottom: 1px solid $colorGrayLight;
+}
+.footerOptionName{
+  font-size: 1rem;
+  font-weight: 500; 
+}
+.userOption {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  padding-right: 10px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $colorLightBlue;
+  border: none;
+  color: $colorDark;
+  width: 100%;
+  border-radius: 0;
+}
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.profile p {
+  margin: 0;
+  margin-left: 10px;
+}
+.avatar {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+}
+.userName {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  font-weight: 500; 
+}

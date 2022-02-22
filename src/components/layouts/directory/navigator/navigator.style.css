@@ -1,0 +1,138 @@
+.navigator {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 190px;
+  width: 190px;
+  min-height: 600px;
+  height: 100%;
+  background: rgb(43, 53, 65);
+  padding: 0px;
+  margin: 0px;
+}
+
+.people {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 43px;
+}
+
+.sideBarPeople {
+  display: flex;
+  height: 80%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 16px 0;
+}
+
+.button {
+  padding: 0 0 0 20px;
+  margin: 0px;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 0px;
+  display: flex;
+  flex-grow: 1;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.titleText {
+  color: white;
+  text-align: left;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 500;
+  width: 100%;
+  justify-content: flex-start !important;
+}
+
+.buttonIconImg {
+  color: white;
+  margin-right: 12px;
+}
+
+.buttonIconFA {
+  color: white;
+  width: 20%;
+  transform: scale(1.5);
+}
+
+.buttonIconMaterial {
+  color: white;
+  width: 20%;
+}
+
+.active {
+  opacity: 1;
+  color: #fff;
+}
+
+.nonActive {
+  color: #98a2ab;
+}
+
+.sectionTitle {
+  align-self: flex-start;
+  margin-left: 20px;
+  font-size: 12px;
+  color: #98a2ab;
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-left: 4px;
+  }
+}
+
+.categories {
+  flex-grow: 1;
+  padding-top: 12px;
+}
+
+.sideBarCategories {
+  padding: 20px 0 0 20px;
+}
+
+.categoryButton {
+  height: 31px !important;
+  min-height: 30px !important;
+  padding: 0px 16px !important;
+  width: 80% !important;
+}
+
+.categoryText {
+  color: #98a2ab;
+}
+
+.sectionText {
+  font-weight: 500;
+}
+
+.sideBarFooter {
+  width: 100%;
+  height: 73px;
+  border-top: 1px solid #798999;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 36px;
+}
+
+.footerIcon {
+  margin-right: 10px;
+}
+
+.footerText {
+  font-size: 15px;
+  font-weight: 500;
+  color: #98a2ab;
+}

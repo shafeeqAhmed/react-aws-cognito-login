@@ -1,0 +1,60 @@
+// @flow
+import React, { PureComponent } from "react";
+import get from "lodash/get";
+import { isBrowser } from "config/env";
+import { parse } from "qs";
+import MoveFile from "./MoveFile";
+import css from "./Modal.style.css";
+
+type Props = any;
+
+class Modal extends PureComponent<Props> {
+  static getQuery = (search: any) =>
+    typeof search === "string" ? parse(search.substr(1)) : undefined;
+
+  getModal = () => {
+    const search = get(this.props, "location.search");
+    const modal = get(
+      this.props,
+      "location.state.modal",
+      get(Modal.getQuery(search), "m", "default")
+    );
+
+    // Define modals here
+    const modals = {
+      "move-file": <MoveFile {...this.props} />,
+      default: null
+    };
+
+    return modals[modal];
+  };
+
+  // TODO: watch for resolution of
+  // https://github.com/yannickcr/eslint-plugin-react/issues/1376
+  props: Props;
+
+  render() {
+    const modal = this.getModal();
+
+    // Side-effect for web
+    const style =
+      typeof document !== "undefined" ? get(document, "body.style") : undefined;
+
+    if (
+      !modal &&
+      isBrowser() &&
+      style &&
+      style.overflow &&
+      style.overflow === "hidden"
+    ) {
+      style.overflow = "visible";
+      return null;
+    }
+
+    if (isBrowser() && style) style.overflow = "hidden";
+
+    return modal ? <div className={css.modal}>{modal}</div> : null;
+  }
+}
+
+export default Modal;

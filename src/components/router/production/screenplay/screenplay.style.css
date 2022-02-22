@@ -1,0 +1,8 @@
+.screenplay {
+  min-width: 100%;
+  flex-grow: 1;
+  display: flex;
+
+  /* TODO: remove when site is mobile responsive */
+  /*overflow: scroll;*/
+}

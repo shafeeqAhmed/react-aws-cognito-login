@@ -1,0 +1,242 @@
+.modalContainer {
+  width: 560px;
+  min-height: 363px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  height: 40px;
+  background-color: #f4f4f4;
+}
+
+.fileIcon {
+  margin-left: 4px;
+  transform: scale(0.9);
+}
+
+.fileName {
+  font-weight: 400;
+  padding-left: 9px;
+  color: #4a4a4a;
+  font-size: 14px;
+}
+
+.collaborators {
+  font-weight: 500;
+  color: #4a4a4a;
+  font-size: 14px;
+  padding-left: 0.25rem;
+}
+
+.closeIconButton {
+  margin-left: auto !important;
+  transform: scale(0.8);
+}
+
+.closeIcon {
+  fill: #999999;
+}
+
+.content {
+  flex-grow: 1;
+  border-top: solid 1px #d1d1d1;
+}
+
+.footer {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.search {
+  position: relative;
+  height: 100%;
+}
+
+.closeSearchButton {
+  position: absolute !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  text-transform: capitalize !important;
+  height: 32px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.section {
+  border-top: solid 1px #d1d1d1;
+}
+
+.subSection {
+}
+
+.subSectionTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: #f7f7f7;
+  padding-left: 12px;
+  height: 20px;
+}
+
+.subSectionTitleText {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #9f9ca6;
+}
+
+.items {
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0;
+  border-bottom: solid 1px #d1d1d1;
+  height: 43px;
+}
+
+.itemExit {
+  opacity: 1;
+  height: 100%;
+}
+
+.itemExitActive {
+  opacity: 0.01;
+  height: 0;
+  transition: opacity 250ms ease-out, height 250ms ease-out;
+}
+
+.searchItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px;
+  border-bottom: solid 1px #d1d1d1;
+  height: 43px;
+
+  cursor: pointer;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding-left: 12px;
+}
+
+.titleText {
+  color: #626262;
+  font-size: 15px;
+  font-weight: 500;
+
+  padding-left: 0.5rem;
+}
+
+.tagTitleText {
+  font-size: 15px;
+  font-weight: 500;
+  border: solid 1px #ab7df6;
+  border-radius: 100px;
+  min-width: 80px;
+  height: 25px;
+  line-height: 22px;
+  text-align: center;
+  margin-left: 10px;
+  padding: 0px 15px 5px 15px;
+  color: #ab7df6;
+}
+
+.userAvatar {
+}
+
+.userRoleTitleText {
+  font-size: 11px;
+  color: #626262;
+  padding-left: 0.5rem;
+}
+
+.permissionLevel {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  margin-left: auto;
+  min-width: 100px !important;
+  height: 100%;
+}
+
+.searchPermissionLevel {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  margin-left: auto;
+  height: 100%;
+
+  transform: scale(0.75);
+}
+
+.searchPermissionLevelEditIcon {
+  fill: black;
+}
+
+.permissionLevelTitle {
+  font-size: 11px;
+  color: #626262;
+  text-align: right;
+  text-transform: capitalize !important;
+}
+
+.permissionLevelEditIcon {
+  fill: black;
+  transform: scale(0.75);
+  margin-left: 0.5rem;
+}
+
+.searchTextField {
+  background-color: #f2f2f2;
+}
+
+.searchInputRoot {
+  background-color: #f2f2f2;
+  height: 36px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.searchInput {
+  height: 100%;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  color: #999999;
+
+  &::placeholder {
+    font-size: 14px;
+    color: #999999;
+  }
+}
+
+.searchInputAdornment {
+  padding-left: 8px;
+  color: #999999;
+}
+
+.searchIcon {
+  fill: #999999;
+}

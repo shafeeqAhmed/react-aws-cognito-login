@@ -1,0 +1,89 @@
+[ignore]
+.*/.git/.*
+.*/build/.*
+.*/coverage/.*
+
+
+.*/node_modules/react-event-listener/.*
+.*/node_modules/vision/test/templates/invalid/helpers/bad1.json
+.*/node_modules/electron-packager/test/fixtures/infer-malformed-json/.*
+.*/node_modules/jss/*
+.*/node_modules/rc-util/*
+
+
+; React Native
+
+; We fork some components by platform
+.*/*\.android.js
+
+; Ignore "BUCK" generated dirs
+<PROJECT_ROOT>/\.buckd/
+
+; Ignore unexpected extra "@providesModule"
+.*/node_modules/.*/node_modules/fbjs/.*
+
+; Ignore duplicate module providers
+; For RN Apps installed via npm, "Libraries" folder is inside
+; "node_modules/react-native" but in the source repo it is in the root
+.*/Libraries/react-native/React.js
+.*/Libraries/react-native/ReactNative.js
+
+
+.*/node_modules/react-native/.*
+.*/node_modules/protobufjs/src/bower.json
+.*/node_modules/elasticlunr/test/.*
+; .*/node_modules/react-select/.*
+.*/node_modules/@material-ui/system/node_modules/warning/warning.js
+
+
+[include]
+
+
+[libs]
+flow/
+
+
+; React Native
+node_modules/react-native/Libraries/react-native/react-native-interface.js
+node_modules/react-native/flow
+
+
+[options]
+emoji=true
+
+module.name_mapper.extension='.*\.css$' -> '<PROJECT_ROOT>/flow/stubs/css-module.js'
+module.name_mapper.extension='.*\.\(eot\|gif\|jpg\|jpeg\|mp4\|otf\|png\|svg\|ttf\|woff\|woff2\)$' -> '<PROJECT_ROOT>/flow/stubs/url-loader.js'
+module.name_mapper.extension='.*\.\(dic\|aff\)$' -> '<PROJECT_ROOT>/flow/stubs/raw-loader.js'
+
+module.use_strict=true
+
+module.file_ext=.js
+module.file_ext=.json
+module.file_ext=.web.js
+module.file_ext=.dic
+module.file_ext=.aff
+
+module.name_mapper='^config\/' -> '<PROJECT_ROOT>/config/'
+module.name_mapper='^server\/' -> '<PROJECT_ROOT>/server/'
+module.name_mapper='^src\/' -> '<PROJECT_ROOT>/src/'
+module.name_mapper='^static\/' -> '<PROJECT_ROOT>/static/'
+
+
+; React Native
+module.system=haste
+munge_underscores=true
+
+module.name_mapper='^[./a-zA-Z0-9$_-]+\.\(bmp\|gif\|jpg\|jpeg\|png\|psd\|svg\|webp\|m4v\|mov\|mp4\|mpeg\|mpg\|webm\|aac\|aiff\|caf\|m4a\|mp3\|wav\|html\|pdf\)$' -> 'RelativeImageStub'
+
+suppress_type=$FlowIssue
+suppress_type=$FlowFixMe
+suppress_type=$FixMe
+
+suppress_comment=\\(.\\|\n\\)*\\$FlowFixMe\\($\\|[^(]\\|(\\(>=0\\.\\(4[0-9]\\|[1-3][0-9]\\|[0-9]\\).[0-9]\\)? *\\(site=[a-z,_]*react_native[a-z,_]*\\)?)\\)
+suppress_comment=\\(.\\|\n\\)*\\$FlowIssue\\((\\(>=0\\.\\(4[0-9]\\|[1-3][0-9]\\|[0-9]\\).[0-9]\\)? *\\(site=[a-z,_]*react_native[a-z,_]*\\)?)\\)?:? #[0-9]+
+suppress_comment=\\(.\\|\n\\)*\\$FlowFixedInNextDeploy
+suppress_comment=\\(.\\|\n\\)*\\$FlowExpectedError
+
+
+[version]
+^0.77.0

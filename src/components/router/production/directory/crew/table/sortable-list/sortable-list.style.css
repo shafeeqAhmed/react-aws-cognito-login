@@ -1,0 +1,20 @@
+.newDepartment {
+  height: 30px;
+  background-color: #f2f4f5;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d8e5ee;
+  padding-left: 20px;
+}
+
+.newDepartmentButton {
+  display: flex;
+  align-items: center;
+}
+
+.newDepartmentText {
+  font-size: 12px;
+  font-weight: 500;
+  color: #54c08a;
+  margin-right: 5px;
+}

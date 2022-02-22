@@ -1,0 +1,6 @@
+export const HOME = "HOME";
+export const MANAGE_ADMINISTRATORS = "MANAGE_ADMINISTRATORS";
+export const SELECT_PRODUCTION = "SELECT_PRODUCTION";
+export const SETTINGS = "SETTINGS";
+export const HASHBLASTS = "HASHBLASTS";
+export const ADD_NEW_ADMIN = "ADD_NEW_ADMIN";

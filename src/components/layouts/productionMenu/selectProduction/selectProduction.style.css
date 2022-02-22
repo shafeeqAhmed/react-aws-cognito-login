@@ -1,0 +1,42 @@
+.container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.production {
+  border: none;
+  width: 100%;
+  color: $colorDark;
+  padding: 8px 10px 8px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $colorGrayLight;
+}
+.prodInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.checkIcon {
+  color: $colorRed;
+}
+.divider {
+  background-color: $colorGrayLight;
+  font-size: 0.8rem;
+  color: $colorGray;
+  padding-left: 8px;
+}
+.noPoster {
+  background-color: $colorDark;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+.poster {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin-right: 10px;
+}

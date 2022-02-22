@@ -1,0 +1,247 @@
+.drawer {
+  transition: visibility 250ms;
+  flex-shrink: 0;
+  width: 40%;
+}
+
+.closed {
+  visibility: hidden;
+}
+
+.toolbar {
+  min-height: 56px;
+
+  @media (min-width: 0px) and (orientation: landscape) {
+    min-height: 48px;
+  }
+
+  @media (min-width: 600px) {
+    min-height: 64px;
+  }
+}
+
+.drawerPaper {
+  width: 40%;
+}
+
+.controlsArea {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.closeIconButton {
+}
+
+.closeIcon {
+}
+
+.titlesArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  padding: 10px 50px 0 50px;
+}
+
+.titleText {
+  font-size: 36px;
+  color: #313d4a;
+  text-align: left;
+}
+
+.subtitleText {
+  font-size: 24px;
+  font-weight: 500;
+  color: #313d4a;
+  text-align: left;
+}
+
+.heroIcon {
+}
+
+.uploadArea {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 50px 25px 50px;
+  cursor: pointer;
+}
+
+.emptySound {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: center;
+  justify-content: center;
+  flex-grow: 0;
+}
+
+.emptySoundImage {
+  cursor: pointer;
+}
+
+.emptySoundHandle {
+}
+
+.emptySoundText {
+  font-size: 20px;
+  color: #848484;
+  padding-left: 15px;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.fileErrorMessage {
+  font-size: 20px;
+  color: #f44336;
+  padding-left: 15px;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.fileInputLabel {
+}
+
+.fileInput {
+  display: none;
+}
+
+.fileFirstRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fileSecondRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fileInputHandle {
+}
+
+.soundArea {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 50px 25px 50px;
+}
+
+.soundImage {
+  transform: scale(2);
+  margin-right: 60px;
+  margin-left: 22px;
+}
+
+.soundDuration {
+  margin-right: 30px;
+  font-size: 22px;
+  color: black;
+}
+
+.playSoundImage {
+}
+
+.fieldsArea {
+  padding: 25px 50px;
+}
+
+.tagChip {
+}
+
+.itemList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: center;
+}
+
+.soundItem {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.soundItemIcon {
+}
+
+.soundItemName {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.soundItemRemoveIconButton {
+}
+
+.soundItemRemoveIcon {
+}
+
+.actionsArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  padding: 25px 50px;
+}
+
+.buttonRoot {
+  width: 75%;
+  margin-bottom: 20px;
+  text-transform: none;
+}
+
+.errorMessage {
+  display: none;
+}
+
+.textField {
+  margin-bottom: 40px;
+}
+
+.tagsFieldRoot {
+  padding: 2.5px;
+}
+
+.tagChip {
+  height: 28px;
+  margin: 2.5px;
+  /* 
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 5px;
+  } */
+}
+
+.tagsInputRoot {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tagsInputInput {
+  display: flex;
+  min-width: 15px;
+  max-width: 100%;
+  flex-grow: 1;
+  width: 15px;
+  margin: 2.5px;
+}

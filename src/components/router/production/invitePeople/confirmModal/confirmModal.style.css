@@ -1,0 +1,134 @@
+.main {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 20, 42, 0.95);
+  padding: 12vh 8vw 15vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.confirmTitle {
+  font-size: 3rem;
+  color: #57aee0;
+  margin-bottom: 8px;
+}
+
+.productionTitle > h1,
+.productionTitle > h3 {
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.productionTitle h3 {
+  margin-left: 20px;
+  font-weight: 100;
+}
+
+.queue {
+  font-size: 24px;
+  color: #57aee0;
+}
+
+.noUsersSelected {
+  font-size: 20px;
+  color: #aaa9ab;
+}
+
+.listContainer {
+  margin-top: 46px;
+  width: 100%;
+  max-width: 600px;
+  flex-grow: 1;
+}
+
+.selectedContact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.selectedContactName {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: $colorDark;
+  text-align: left;
+  color: #fff;
+}
+
+.selectedContactEmail {
+  font-size: 0.8rem;
+  color: $colorDark;
+  color: #fff;
+  font-weight: 100;
+  opacity: 0.9;
+}
+
+.inviteButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.errorMessage {
+  color: $colorRed;
+  margin-left: 20px;
+}
+
+.inviteButton {
+  width: 140px !important;
+  height: 44px !important;
+  border-radius: 22px !important;
+  background-color: #4a90e2 !important;
+}
+
+.inviteLabel {
+  color: #fff !important;
+  font-weight: 500 !important;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 16px;
+}
+
+.inviteButtonContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.inviteButton {
+  width: 140px !important;
+  height: 44px !important;
+  border-radius: 22px !important;
+  background-color: #4a90e2 !important;
+}
+
+.inviteLabel {
+  color: #fff !important;
+  font-weight: 500 !important;
+}
+
+.closeButton {
+  position: absolute;
+  right: 42px;
+  top: 42px;
+}

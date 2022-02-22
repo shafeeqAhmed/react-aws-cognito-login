@@ -1,0 +1,54 @@
+{
+  "name": "reactTemplate",
+  "displayName": "reactTemplate",
+  "env": {
+    "API_URL": {
+      "required": true
+    },
+    "AWS_APP_VERSION": {
+      "required": true
+    },
+    "AWS_CLIENT_ID": {
+      "required": true
+    },
+    "AWS_IDENTITY_POOL_ID": {
+      "required": true
+    },
+    "AWS_REGION": {
+      "required": true
+    },
+    "AWS_USER_POOL_ID": {
+      "required": true
+    },
+    "WALKIE_API_URL": {
+      "required": true
+    },
+    "ROOT_URL": {
+      "required": true
+    },
+    "NODE_ENV": {
+      "required": true
+    },
+    "SECURE_COOKIE": {
+      "required": true
+    },
+    "SHOW_ERRORS": {
+      "required": true
+    },
+    "ROLLBAR_ENV": {
+      "required": true
+    },
+    "ROLLBAR_TOKEN": {
+      "required": true
+    },
+    "YARN_PRODUCTION": {
+      "required": true
+    },
+    "NPM_CONFIG_PRODUCTION": {
+      "required": true
+    },
+    "INTERCOM_APP_ID": {
+      "required": true
+    }
+  }
+}

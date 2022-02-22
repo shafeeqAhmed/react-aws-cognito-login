@@ -1,0 +1,247 @@
+.toolbar {
+  width: 100%;
+  min-width: 100%;
+  height: 55px;
+  background: #ffffff;
+  display: flex;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d6e5ed;
+}
+
+.iconToolsContainer {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.iconToolsLeftContainer {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.iconWithTextContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  max-height: 36px;
+}
+
+.lockButton {
+  background-color: #0093ee;
+  color: white;
+  max-height: 25px;
+  min-width: initial;
+  text-transform: none;
+  display: flex;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 10px 3px 5px;
+  margin-left: 10px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.imgLock {
+  height: 20px;
+}
+
+.scenes {
+  padding: 0px;
+  margin: 0px 0px 0px 10px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  color: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textTitle {
+  color: #5b5b5b;
+  opacity: 0.8;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.imgArrowsInsideGray {
+  height: 30px;
+}
+
+.imgUnit {
+  height: 26px;
+  padding-right: 1rem;
+}
+
+.buttonToolbar {
+  font-weight: bold;
+  padding: 3px;
+  margin: 0px;
+  margin-right: 10px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 0px;
+  color: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: initial;
+}
+
+.buttonFontTools {
+  width: 36px;
+  margin-right: 0px;
+}
+
+.buttonToolbarSelected {
+  box-shadow: inset 0px 0px 3px -1px rgba(0, 0, 0, 0.75);
+}
+
+.optionText {
+  display: flex;
+  margin-left: 10px;
+}
+
+.imgTools {
+  height: 30px;
+}
+
+.imgToolsRight {
+  height: 26px;
+  margin-left: 10px;
+}
+
+.imgWrite {
+  height: 100%;
+  width: 100%;
+}
+
+.imgSmallTools {
+  height: 25px;
+}
+
+.iconToolsRightContainer {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.publish {
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 0px;
+  color: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.publishTitle {
+  color: #2f323e;
+  font-weight: 300;
+  font-size: 13px;
+  opacity: 0.6;
+  font-weight: 800;
+  vertical-align: middle;
+  margin-left: 35px;
+}
+
+.underline {
+  text-decoration: underline;
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 0px;
+  color: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonWriteContainer {
+  display: flex;
+  margin: 0px 10px;
+}
+
+.buttonWriteSelect {
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  color: none;
+  height: 26px;
+  width: 34px;
+}
+
+.buttonWriteNotSelect {
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 0px;
+  color: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 50px;
+  background: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.imgSearch {
+  height: 20px;
+}
+
+.input {
+  flex: 1;
+  font-size: 14px;
+}
+
+.lineClassContainer {
+  display: flex;
+}
+
+.unitSelect {
+  @mixin font-size 14;
+  padding-left: 1rem;
+  text-transform: uppercase;
+}
+
+.unitSelectRoot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.unitSelectIconRoot {
+  margin-left: -24px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+@media print {
+  .toolbar {
+    display: none;
+  }
+}

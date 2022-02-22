@@ -1,0 +1,21 @@
+/* These CSS module styles should not be nested like other SASS implementations
+ * since the classnames will be atomic after compilation
+ */
+.form {
+  margin-right: 1rem;
+}
+
+.input {
+  width: 275px;
+  height: 30px;
+  border-radius: 2px;
+  background-color: $colorPaleGreyFive;
+  border: solid 1px $colorSilver;
+  font-size: 12px;
+  padding: 0;
+  padding-left: 10px;
+
+  &.error {
+    border-color: $colorPinkishRed;
+  }
+}

@@ -1,0 +1,7 @@
+.directoryContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  min-width: 1160px;
+}

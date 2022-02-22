@@ -1,0 +1,137 @@
+.event {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: solid 1px $colorPaleGreyTwo;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: $colorWhite;
+
+  &.selected {
+    border: solid 1px $colorAzure;
+  }
+
+  &:hover {
+    background-color: $colorPaleGreyTwo;
+  }
+}
+
+.scene {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg {
+  @mixin font-size 12;
+  color: $colorBattleshipGrey;
+}
+
+.sceneNum {
+  @mixin font-size 15;
+  width: 60%;
+  border-radius: 4px;
+  border: 1px solid $colorPaleGreyThree;
+  color: $colorPaleGrey;
+  text-align: center;
+  padding: 0.7rem;
+
+  &.dark {
+    color: $colorBlack;
+  }
+}
+
+.sceneType {
+  @mixin font-size 12;
+  width: 40%;
+  text-transform: uppercase;
+  color: $colorBattleshipGrey;
+  text-align: center;
+}
+
+.sceneTitle {
+  @mixin font-size 14;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.sceneDesc {
+  @mixin font-size 11;
+  color: $colorBattleshipGrey;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 90%;
+}
+
+.dayType {
+  @mixin font-size 11;
+  text-transform: uppercase;
+  color: $colorBattleshipGrey;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.number {
+  @mixin font-size 12;
+  color: $colorWhite;
+  background-color: $colorBattleshipGrey;
+  border-radius: 1rem;
+  padding: 0.1rem 0.4rem;
+  margin: 0.2rem;
+}
+
+.locations {
+  display: flex;
+}
+
+.location {
+  @mixin font-size 12;
+  color: $colorBattleshipGrey;
+  margin-left: 0.5em;
+
+  a {
+    color: $colorBattleshipGrey;
+  }
+}
+
+.pages {
+  @mixin font-size 12;
+  color: $colorBattleshipGrey;
+}
+
+.time {
+  @mixin font-size 12;
+  color: $colorBattleshipGrey;
+}
+
+/* table cell widths */
+.fifty {
+  width: 50%;
+}
+.forty {
+  width: 40%;
+}
+.thirtyFive {
+  width: 35%;
+}
+.thirty {
+  width: 30%;
+}
+.twenty {
+  width: 20%;
+}
+.ten {
+  width: 10%;
+}
+.five {
+  width: 5%;
+}

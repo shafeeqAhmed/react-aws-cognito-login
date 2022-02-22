@@ -1,0 +1,232 @@
+.header {
+  width: 100%;
+  height: 52px;
+  min-width: 1160px;
+  background: #0079c4;
+  display: flex;
+  flex-grow: 0;
+  justify-content: space-between;
+}
+
+.iconToolsContainer {
+  display: flex;
+}
+
+.buttonLogo {
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0px;
+  color: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 49px;
+  z-index: 1;
+}
+
+.logoIcon {
+  transform: rotate(90deg) scale(1.2);
+  color: white;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerToolsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchContainer {
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.button {
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 0px;
+  color: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helpButtom {
+  display: flex;
+  align-items: center;
+}
+
+.textTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #d5d5d5;
+  margin: 0px 0px 0px 25px;
+}
+
+.breadcrumbDivider {
+  color: #d5d5d5;
+  fill: #d5d5d5;
+  transform: scale(0.85);
+  margin-top: 4px;
+}
+
+.breadcrumbTitle {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.textDescription {
+  color: white;
+  font-size: 15px;
+  margin: 0px 10px 0px 10px;
+}
+
+.textDescriptionSelected {
+  color: white;
+  font-size: 15px;
+  font-weight: 800;
+  margin: 0px 15px 0px 10px;
+}
+
+.imgArrow {
+  width: 7px;
+  height: 10px;
+}
+
+.iconWithTexContainer {
+  display: flex;
+  align-items: center;
+}
+
+.headerUsersContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerUsers {
+  display: flex;
+  justify-content: space-between;
+  height: 70%;
+  margin-right: 20px;
+}
+
+.questionIcon {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  padding-left: 15px;
+  border-left: 1px solid #979797;
+}
+
+.imgQuestion {
+  height: 25px;
+}
+
+.textDescriptionSmall {
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  margin: 0px 10px 0px 12px;
+}
+
+/* There are different size images classes,
+because the true icons are not done yet. */
+
+.imgFolderBlue {
+  width: 19px;
+  height: 17px;
+}
+
+.buttonImgMenu {
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 0px;
+  color: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.menuIcon {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgBreadcrumbsSystem {
+  width: 19px;
+  height: 24px;
+}
+
+.imgMedium {
+  height: 30px;
+}
+
+.imgMenu {
+  height: 100%;
+  width: 52px;
+}
+
+.avatar {
+  height: 32px;
+  width: 32px;
+  margin-left: 5px;
+  border-radius: 10px;
+  border: 2px solid;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.walkieButton {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: relative;
+  margin-right: 20px;
+  height: 36px;
+}
+
+.walkieCounter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12px;
+  width: 12px;
+  border-radius: 7px;
+  font-size: 9px;
+  color: #fff;
+  background: #f00;
+  position: absolute;
+  right: -10px;
+  top: 0px;
+}
+
+.walkieIcon {
+  font-size: 20px;
+  color: white;
+}

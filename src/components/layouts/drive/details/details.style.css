@@ -1,0 +1,268 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 30%;
+  min-width: 260px;
+  max-width: 290px;
+  min-height: 600px;
+  height: 100%;
+  background: #f5f8fb;
+  padding: 0px;
+  margin: 0px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 17px;
+  width: 100%;
+  position: relative;
+}
+
+.button {
+  min-width: 60% !important;
+  height: 36px !important;
+  border-radius: 4px !important;
+  margin: 0 30px 15px 30px !important;
+  padding: 0 30px !important;
+  width: 62% !important;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  background-color: #0093ee !important;
+}
+
+.buttonLabel {
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 500;
+  text-wrap: none;
+  width: 100% !important;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+
+.buttonImage {
+  display: flex;
+}
+
+.buttonText {
+  display: flex;
+  margin-left: 0.25rem;
+}
+
+.numSelected {
+  display: flex;
+  text-align: center;
+  margin-top: 17px;
+  width: 100%;
+  min-height: 15px;
+  max-height: 15px;
+}
+
+.numSelectedLabel {
+  width: 100%;
+  height: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.shareApercu {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+  border-top: 1px solid #d8e5ee;
+  border-bottom: 1px solid #d8e5ee;
+  width: 100%;
+  margin-top: 14px;
+}
+
+.policySubjects {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 14px;
+}
+
+.policyUsers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.policyTags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.policyTag {
+  font-size: 10px;
+  font-weight: 500;
+  border: solid 1px #ab7df6;
+  border-radius: 100px;
+  min-width: 80px;
+  height: 25px;
+  line-height: 22px;
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 0px 15px 5px 15px;
+  color: #ab7df6;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.shareChevron {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shareChevronIconButton {
+}
+
+.shareChevronIcon {
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 35px;
+  margin-left: 29px;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.action {
+  justify-content: flex-start !important;
+}
+
+.actionLabel {
+  width: 125px;
+  height: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4a4a4a;
+  text-transform: none;
+  text-align: left;
+}
+
+.popperClose {
+  pointer-events: none;
+}
+
+.popper {
+  width: 100%;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: $zModal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fileApercu {
+  margin-top: auto;
+  width: 100%;
+}
+
+.fileApercuGraphic {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 130px;
+  background-color: #0fb7b7;
+  color: white;
+}
+
+.fileApercuIcon {
+  transform: scale(1.5);
+  filter: brightness(0) invert(1);
+}
+
+.fileExtensionText {
+  font-size: 36px;
+  color: white;
+  padding-left: 1rem;
+  font-weight: 500;
+}
+
+.fileName {
+  min-height: 35px;
+  border-bottom: #d8e5ee 1px solid;
+  padding: 10px 15px 10px 15px;
+}
+
+.fileNameText {
+  color: #4a4a4a;
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+.fileAttributes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 12px;
+  padding-bottom: 22px;
+}
+
+.fileAttribute {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  width: 100%;
+  padding: 3px 29px 3px 29px;
+}
+
+.fileAttributeLabel {
+  width: 30%;
+  font-size: 12px;
+  font-weight: 500;
+  color: #98a2ab;
+}
+
+.fileAttributeValue {
+  width: 70%;
+  font-size: 12px;
+  font-weight: 500;
+  color: #3f536e;
+}

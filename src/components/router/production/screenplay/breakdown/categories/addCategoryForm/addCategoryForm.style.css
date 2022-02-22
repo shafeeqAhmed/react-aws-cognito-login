@@ -1,0 +1,48 @@
+.container {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 9px;
+  border-bottom: 1px solid #d8e5ee;
+  padding-right: 8px;
+}
+
+.focused {
+  background-color: #fffcde;
+}
+
+.title {
+  font-size: 12px;
+  font-weight: 500;
+  color: #4a4a4a;
+  flex-grow: 1;
+}
+
+.icon {
+  margin-right: 2px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  cursor: pointer;
+}
+
+.inputRoot {
+  opacity: 0.7;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4a4a4a;
+  text-transform: uppercase;
+}
+
+.input {
+  text-transform: uppercase;
+}
+
+.chevronIcon {
+  width: 17px;
+  color: #a8c6df;
+  transform: rotate(-90deg);
+}

@@ -1,0 +1,442 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 22px 0 28px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+
+.checkboxRoot {
+  padding: 0;
+
+  &:not(.checkboxChecked) > span > svg {
+    fill: $colorSilver;
+    stroke: $colorPaleGreyTwo;
+  }
+}
+
+.leftButtons {
+  display: flex;
+  width: 44%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 19%;
+}
+
+.checkboxChecked {
+  color: $colorAzure !important;
+}
+
+.shot {
+  border: 1px dashed $colorAzure;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  padding: 3px 17px;
+
+  span {
+    font-size: 12px;
+    font-weight: 500;
+    color: $colorAzure;
+  }
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background-color: $colorButterscotch;
+}
+
+.elypsis {
+  height: 22px;
+}
+
+.clearIcon {
+  color: #a8c6df;
+}
+
+.headerButton {
+  padding: 0;
+}
+
+.shotSection {
+  padding: 5px 11px 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.section {
+  padding: 4px 0 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.sectionTitle {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 500;
+  color: $colorGreyishBrown;
+
+  span {
+    font-size: 14px;
+    font-weight: 500;
+    color: $colorGreyishBrown;
+  }
+}
+
+.sectionContent {
+  padding: 15px 2px 0px 15px;
+}
+
+.title {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: normal;
+  color: $colorGreyishBrownTwo;
+  margin: 0;
+}
+
+.shotImg {
+  width: 100%;
+  margin-top: 42px;
+}
+
+.shotDetails {
+  font-size: 14px;
+  font-weight: normal;
+  color: $colorBlack;
+  margin: 0;
+  margin-top: 12px;
+}
+
+.segments {
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.segment {
+  font-size: 14px;
+  font-weight: normal;
+  color: $colorBlack;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-left: 18px;
+  height: 30px;
+}
+
+.segment::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: $colorDarkSkyBlueThree;
+}
+
+.segment:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  width: 1px;
+  height: 100%;
+  background-color: $colorDarkSkyBlueThree;
+}
+
+.addSegment {
+  font-size: 14px;
+  font-weight: normal;
+  color: $colorDarkSkyBlueThree;
+  text-decoration: underline;
+  padding-left: 18px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.addSegment span {
+  position: absolute;
+  left: -2px;
+  font-size: 24px;
+}
+
+.linkedShots {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.linkedShot {
+  min-width: 45px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 500;
+  color: $colorWhite;
+  background-color: $colorAzure;
+}
+
+.timesContainer  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.greyBox {
+  width: 84px;
+  height: 30px;
+  border-radius: 2px;
+  background-color: $colorPaleGreyFive;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: normal;
+  color: $colorGreyishBrownTwo;
+  display: flex;
+  align-items: center;
+  padding-left: 9px;
+  margin-right: 10px;
+}
+
+.shotTime {
+  width: 60px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: $colorDarkMintTwo;
+  font-size: 11px;
+  font-weight: 500;
+  color: $colorWhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionTimeTracking {
+  padding: 15px 15px 0px 15px;
+}
+
+.trBottomText {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 0 6px;
+}
+
+.trBottomText > p > span {
+  font-family: DIN;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4f4f4f;
+}
+
+.trBottomText > p {
+  font-size: 9px;
+  margin-left: 0;
+  margin: 0;
+}
+
+.remaining {
+  margin-left: 100px;
+}
+
+.barOut {
+  height: 5px;
+  background: #d8e5ee;
+  border-radius: 3px;
+  margin: 6px 3px 10px;
+  position: relative;
+}
+
+.barIn {
+  position: absolute;
+  height: 5px;
+  width: 25%;
+  background: #0093ee;
+  border-radius: 3px;
+}
+
+.take {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.takeBadge {
+  width: 13px;
+  height: 13px;
+  top: -3px;
+  right: -3px;
+  border-radius: 50%;
+  position: absolute;
+  border: 1px solid $colorWhite;
+}
+
+.takeNumber {
+  font-size: 14px;
+  font-weight: normal;
+  color: $colorSteel;
+  margin-right: 6px;
+  min-width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+
+.takeNumberOutlined {
+  border: 1px solid $colorAzure;
+  color: $colorAzure;
+  font-weight: 500;
+  border-radius: 50%;
+}
+
+.takeNumberFilled {
+  background-color: $colorAzure;
+  border: 1px solid $colorAzure;
+  color: $colorWhite;
+  font-weight: 500;
+  border-radius: 50%;
+}
+
+.takeBox {
+  width: 50px;
+  height: 38px;
+  border-radius: 2px;
+  background-color: $colorAzure;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+  position: relative;
+}
+
+.takeTime {
+  font-size: 12px;
+  font-weight: 500;
+  color: $colorAzure;
+  margin-left: 6px;
+}
+
+.takeRightText {
+  font-size: 12px;
+  font-weight: normal;
+  color: $colorSteel;
+  margin-left: 12px;
+}
+
+.backgroundGrey {
+  background-color: $colorSilver;
+}
+
+.backgroundRed {
+  background-color: $colorPinkishRed;
+}
+
+.addTake {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: $colorAzure;
+  padding-left: 26px;
+}
+
+.addTakeIcon {
+  margin-right: 8px;
+}
+
+.detailsContainer {
+  display: flex;
+}
+
+.screensContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.screen {
+  height: 24px;
+  border-radius: 4px;
+  background-color: $colorDarkMintTwo;
+  font-size: 11px;
+  font-weight: 500;
+  color: $colorWhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+.addScreenButton {
+  margin-bottom: 6px;
+  display: flex;
+}
+
+.note {
+  display: flex;
+  margin-bottom: 26px;
+}
+
+.noteAvatar {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.noteHeader {
+  margin: 0;
+  line-height: 1;
+  display: flex;
+  align-items: baseline;
+}
+
+.noteName {
+  font-size: 12px;
+  font-weight: 500;
+  color: #0f0f0f;
+}
+
+.noteTime {
+  font-size: 10px;
+  font-weight: normal;
+  color: $colorSteel;
+  margin-left: 8px;
+}
+
+.noteMessage {
+  font-size: 12px;
+  color: #0f0f0f;
+}

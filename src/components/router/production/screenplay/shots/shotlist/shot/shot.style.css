@@ -1,0 +1,236 @@
+.shotContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 9px 0;
+  border-bottom: 1px solid #d8d8d8;
+  background-color: $colorWhite;
+  min-height: 50px;
+}
+
+.checkboxRoot {
+  padding: 0;
+
+  &:not(.checkboxChecked) > span > svg {
+    fill: $colorSilver;
+    stroke: $colorPaleGreyTwo;
+  }
+}
+
+.checkboxContainer {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.checkboxChecked {
+  color: $colorAzure !important;
+}
+
+.shotInfoContainer {
+  flex: 16;
+  display: flex;
+  align-items: center;
+}
+
+.shotCodeContainer {
+  flex: 2;
+}
+
+.shotCode {
+  height: 20px;
+  border-radius: 2px;
+  background-color: $colorAzure;
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 500;
+  color: $colorWhite;
+  padding: 0 13px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  width: fit-content;
+  min-width: 50px;
+}
+
+.shotCodeOutlined {
+  border: 1px dashed $colorAzure;
+  background-color: $colorWhite;
+  color: $colorAzure;
+}
+
+.shotDescription {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: normal;
+  color: $colorBlack;
+  display: flex;
+  align-items: center;
+  flex: 8;
+}
+
+.shotSegments {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 7;
+}
+
+.segment {
+  display: flex;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 9px;
+  font-weight: normal;
+  color: $colorBlack;
+  height: 17px;
+}
+
+.segmentDot {
+  width: 6px;
+  height: 6px;
+  background-color: $colorAzure;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 6px;
+}
+
+.segment:not(:last-child) .segmentDot::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  left: 0;
+  right: 0;
+  top: 3px;
+  height: 16px;
+  background: $colorAzure;
+  margin: auto;
+}
+
+.shotDotContainer {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.shotDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: $colorButterscotch;
+}
+
+.shotTime {
+  flex: 3;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  color: $colorAzure;
+}
+
+.playIconContainer {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.playIcon {
+  background-color: $colorDarkMint;
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.playIconRoot {
+  color: $colorWhite;
+  font-size: 13px;
+}
+
+.rightInfo {
+  flex: 10;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cameraContainer {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  flex: 2;
+}
+
+.cameraIcon {
+  padding: 0;
+  margin-left: 2px;
+  width: 18px;
+  margin-left: 5px;
+}
+
+.shotCameraIcon {
+  margin-left: 18px;
+  margin-right: 5px;
+}
+
+.camerasCounter {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  color: $colorAzure;
+}
+
+.timeTracking {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex: 8;
+}
+
+.time {
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: normal;
+  color: $colorBlack;
+  flex: 1;
+
+  &.left {
+    text-align: right;
+  }
+}
+
+.timeBarTotal {
+  background: $colorLightSkyBlue;
+  min-width: 90px;
+  height: 6px;
+  border-radius: 3px;
+  margin: 6px;
+  position: relative;
+}
+
+.trackedBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  border-radius: 3px;
+  width: 30%;
+  background-color: $colorAzure;
+}
+
+.elypsisContainer {
+  flex: 1;
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.elypsisButton {
+  display: flex;
+}

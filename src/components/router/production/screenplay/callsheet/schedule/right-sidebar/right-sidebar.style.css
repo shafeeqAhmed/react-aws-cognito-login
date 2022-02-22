@@ -1,0 +1,373 @@
+.rightSidebar {
+  background-color: $colorPaleGrey;
+  border-right: 1px solid $colorSilver;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+
+.header {
+  width: 100%;
+  border-radius: 4px;
+  background-color: $colorBeige;
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 7px 20px 20px;
+  overflow: scroll;
+  height: 116px;
+
+  .headerTitle {
+    font-size: 12px;
+    font-weight: 500;
+    color: $colorBlack;
+    margin-bottom: 12px;
+    letter-spacing: 0.18px;
+  }
+
+  .headerContent {
+    font-size: 11px;
+    color: $colorBlack;
+    line-height: 13px;
+
+    div {
+      font-weight: 500;
+      margin-bottom: 13px;
+      line-height: 11px;
+    }
+  }
+
+  .headerRightBar {
+    width: 20px;
+
+    .moreButton {
+      padding: 0;
+    }
+  }
+}
+
+.content {
+  overflow-y: scroll;
+  padding: 0 18px;
+}
+
+.topInfoContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 0px;
+  border-bottom: solid 1px $colorLightSkyBlue;
+}
+
+.topItem {
+  display: flex;
+}
+
+.iconContainer {
+  width: 21px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.nonIcon {
+  width: 0;
+}
+
+.topItemContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.sheetIcon {
+  position: absolute;
+  left: -3px;
+  bottom: -3px;
+}
+
+.topItemTitle {
+  font-size: 9px;
+  font-weight: normal;
+  color: $colorGreyishBrown;
+  margin: 0;
+}
+
+.topItemInfo {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: $colorDark;
+}
+
+.topItemInfo > p {
+  margin: 0;
+}
+
+.timeTracking {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding-top: 4px;
+  border-bottom: solid 1px $colorLightSkyBlue;
+  height: 80px;
+  padding-bottom: 6px;
+}
+
+.trHeader {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.trHeader > p {
+  display: inline;
+  font-weight: 500;
+  font-size: 11px;
+  margin: 0;
+  color: $colorGreyishBrown;
+}
+
+.trBottomText {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 0 6px;
+}
+
+.trBottomText > p > span {
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $colorDark;
+}
+
+.trBottomText > p {
+  font-size: 9px;
+  margin-left: 0;
+  margin: 0;
+}
+
+.remaining {
+  margin-left: 100px;
+}
+
+.barOut {
+  height: 5px;
+  background: $colorLightSkyBlue;
+  border-radius: 3px;
+  margin: 6px 3px 10px;
+  position: relative;
+}
+
+.barIn {
+  position: absolute;
+  height: 5px;
+  width: 25%;
+  background: $colorAzure;
+  border-radius: 3px;
+}
+
+.shots {
+  display: flex;
+  flex-flow: column;
+  border-bottom: solid 1px $colorLightSkyBlue;
+  padding: 8px 0 16px;
+}
+
+.shotsHeader {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shotsTitle {
+  font-size: 11px;
+  font-weight: 500;
+  color: $colorGreyishBrown;
+  margin: 0;
+}
+
+.viewAll {
+  font-size: 9px;
+  text-align: right;
+  color: $colorAzure;
+  margin: 0;
+}
+
+.shotsContainer {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  margin-top: 7px;
+  width: 103%;
+  flex-wrap: wrap;
+}
+
+.shot {
+  position: relative;
+  width: 36px;
+  height: 19px;
+  border-radius: 3px;
+  border: 1px dashed $colorAzure;
+  background: $colorWhite;
+  margin-right: 4px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shot.active {
+  background: $colorAzure;
+  border: 1px solid $colorAzure;
+}
+
+.shot > p {
+  font-size: 10px;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: 0%;
+  margin: 0;
+  color: $colorAzure;
+}
+
+.shot.active > p {
+  color: $colorWhite;
+}
+
+.locations {
+  display: flex;
+  flex-flow: column;
+  border-bottom: solid 1px $colorLightSkyBlue;
+  padding-top: 6px;
+}
+
+.locationInfo {
+  display: flex;
+  flex-flow: column;
+  padding: 15px 0;
+}
+
+.locations > p {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 500;
+  color: $colorGreyishBrown;
+}
+
+.location {
+  margin-bottom: 11px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.locationContent {
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
+.locationTitle {
+  margin: 0;
+  font-weight: 500;
+  font-size: 11px;
+  color: $colorGreyishBrown;
+  text-transform: uppercase;
+}
+
+.locationTitle > img {
+  width: 18px;
+  height: 17.9px;
+  margin-bottom: -4px;
+  margin-right: 3px;
+}
+
+.locationDescription {
+  font-size: 11px;
+  color: $colorGreyishBrown;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.requirement {
+  display: flex;
+  flex-flow: column;
+  padding-top: 6px;
+}
+
+.rHeader {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.rTitle {
+  width: 125px;
+  height: 13px;
+  font-size: 11px;
+  font-weight: 500;
+  color: $colorGreyishBrown;
+  margin: 0;
+}
+
+.requirements {
+  display: flex;
+  flex-flow: column;
+  padding: 6px 0 10px;
+  margin-left: 23px;
+  border-bottom: solid 1px $colorLightSkyBlue;
+}
+
+.reqContent {
+  margin: 0;
+}
+
+.reqTitle {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 500;
+  color: $colorGreyishBrown;
+  margin-bottom: 2px;
+}
+
+.reqItem {
+  display: flex;
+  align-items: center;
+}
+
+.reqItemNumber {
+  height: 16px;
+  background-color: $colorPeacockBlue;
+  border-radius: 8px;
+  padding: 0 6px;
+  margin-right: 4px;
+  color: $colorWhite;
+  font-size: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reqItemName {
+  font-size: 11px;
+  line-height: 1.82;
+  font-weight: normal;
+  letter-spacing: normal;
+  color: $colorGreyishBrown;
+}
+
+.category {
+  border-bottom: solid 1px $colorLightSkyBlue;
+  padding: 10px 0 8px;
+}
+
+.category:last-child {
+  border-bottom: none;
+}

@@ -1,0 +1,112 @@
+.editor {
+  flex: $flexWidthScreenplayContent;
+  min-height: 500px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 1s, opacity 1s linear;
+  background-color: #f9f9f9;
+}
+
+.hidden {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.hidden > *:nth-child(2) {
+  /* opacity: 0; */
+  display: none;
+}
+
+.content > * {
+  width: 8.5in;
+  height: 100%;
+}
+
+:global {
+  .CodeMirror-line pre,
+  .CodeMirror-line *,
+  .CodeMirror-line *::before,
+  .CodeMirror-line *::after {
+    font-family: CourierPrime;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .firepad-lc-pc-scene,
+  .firepad-lc-pc-scene *,
+  .firepad-lc-pc-scene::before,
+  .firepad-lc-pc-scene::after {
+    font-weight: bold;
+  }
+}
+
+.rightSidebar {
+  width: 224px;
+  min-width: 224px;
+  background-color: #fafbfc;
+  overflow-y: scroll;
+}
+
+.placeholderContainer  {
+  overflow-y: scroll;
+  background-color: #fff;
+}
+
+.placeholderScene {
+  padding: 11px;
+  padding-bottom: 16px;
+}
+
+.placeholderSceneGrey {
+  background-color: #f3f3f3;
+}
+
+.placeholderHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12%;
+  font-size: 16px;
+  font-weight: normal;
+  color: #4a4a4a;
+
+  * {
+    font-family: CourierPrime;
+  }
+}
+
+.placeholderName {
+  padding-left: 40px;
+  flex-grow: 1;
+}
+
+.contentContainer  {
+  padding-left: 147px;
+  height: 130px;
+}
+
+.placeholderContent {
+  width: 543px;
+  padding: 17px;
+}

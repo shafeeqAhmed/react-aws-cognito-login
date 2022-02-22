@@ -1,0 +1,22 @@
+.tableContainer {
+  width: 100%;
+
+  .tableHead {
+    width: 100%;
+    border-bottom: 1px solid #d8e5ee;
+    height: 36px;
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 12px;
+      font-weight: 500;
+      color: #313d4a;
+      display: flex;
+      align-items: center;
+      img {
+        margin: 0 6px 1px 0;
+      }
+    }
+  }
+}

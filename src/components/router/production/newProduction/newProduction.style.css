@@ -1,0 +1,224 @@
+.content {
+  height: 700px;
+  position: relative;
+}
+
+.fieldContainer {
+  display: flex;
+  align-items: flex-end;
+  width: 500px;
+}
+
+.field  {
+  font-weight: 500;
+}
+
+.select {
+  font-weight: 500;
+}
+
+.nextButton {
+  color: #4a90e2;
+  border: 2px solid #4a90e2;
+  min-width: 90px;
+  padding: 5px;
+  border-radius: 4px;
+  margin-top: 50px;
+  font-weight: 500;
+}
+
+.nextButtonDisabled {
+  opacity: 0.5;
+}
+
+.messageError {
+  margin-top: 20px;
+  color: $colorRed;
+}
+
+.editPosterContainer {
+  height: 160px;
+  margin-top: 60px;
+  margin-left: 14px;
+}
+
+.posterContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.editControls {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+  position: relative;
+  height: 130px;
+  width: 250px;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customFileInput {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.customFileInput input {
+  position: relative;
+  height: 30px;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.customFileInput:before {
+  content: "Choose File";
+  display: block;
+  border: 2px solid #000;
+  padding: 5px 0px;
+  outline: none;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  border: none;
+  color: #4a90e2;
+  background: $colorWhiteFaded;
+}
+
+.submitBtn {
+  color: #4a90e2;
+  font-weight: 500;
+}
+
+.editPosterText {
+  font-size: 1.1rem;
+  color: #848484;
+  margin-top: 10px;
+  width: 80px;
+  text-align: center;
+}
+
+/* Input range */
+.inputRange {
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+.inputRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.inputRange:focus {
+  outline: none;
+}
+
+.inputRange::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.inputRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  background: #4a90e2;
+  cursor: pointer;
+  margin-top: -6px;
+}
+
+.inputRange::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  background: #4a90e2;
+  cursor: pointer;
+}
+
+.inputRange::-ms-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  background: #4a90e2;
+  cursor: pointer;
+}
+
+.inputRange::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: $colorGrayLight;
+  border-radius: 3px;
+}
+
+.inputRange:focus::-webkit-slider-runnable-track {
+  background: $colorGrayLight;
+}
+
+.inputRange::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: $colorGrayLight;
+  border-radius: 3px;
+}
+
+.inputRange::-ms-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.inputRange::-ms-fill-lower {
+  background: #4a90e2;
+  border-radius: 3px;
+}
+.inputRange:focus::-ms-fill-lower {
+  background: #4a90e2;
+}
+.inputRange::-ms-fill-upper {
+  background: #4a90e2;
+  border-radius: 3px;
+}
+.inputRange:focus::-ms-fill-upper {
+  background: #4a90e2;
+}
+
+.pagination {
+  display: flex;
+  width: 40px;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.step {
+  width: 6px;
+  height: 6px;
+  opacity: 0.5;
+  background-color: #57aee0;
+  border-radius: 3px;
+}
+
+.stepActive {
+  opacity: 1;
+}

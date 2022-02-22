@@ -1,0 +1,86 @@
+.rightSidebar {
+  background-color: $colorWhite;
+  border-left: 1px solid $colorSilver;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  padding: 11px 14px 11px 19px;
+}
+
+.title {
+  font-family: DIN;
+  font-size: 11px;
+  font-weight: 500;
+  color: $colorGreyishBrown;
+  text-transform: uppercase;
+}
+
+.bulletins {
+  .bulletin  {
+    display: flex;
+    background-color: rgba(232, 183, 26, 0.2); // #squash 20%
+    border-radius: 2px;
+    padding: 11px;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .iconContainer {
+      padding: 0 2px;
+
+      .bulletinIcon {
+        width: 29px;
+      }
+    }
+
+    .content {
+      padding-left: 3px;
+
+      .bulletinText {
+        font-family: DIN;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 1.4;
+        color: $colorGreyishBrown;
+      }
+
+      .bulletinButtons {
+        display: flex;
+        align-items: center;
+
+        .bulletinButton {
+          font-family: DIN;
+          font-size: 10px;
+          color: $colorVeryDark;
+        }
+
+        .dot {
+          font-family: Roboto;
+          font-weight: 900;
+          margin: 0 6px;
+        }
+      }
+    }
+  }
+}
+
+.addBulletinButton {
+  text-align: left;
+  margin-left: 9px;
+
+  .addBulletinIcon {
+    width: 22px;
+    margin-right: 8px;
+  }
+
+  .addBulletinText {
+    font-family: DIN;
+    font-size: 14px;
+    font-weight: 500;
+    color: $colorAzure;
+  }
+}

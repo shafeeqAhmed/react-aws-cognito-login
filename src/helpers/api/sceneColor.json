@@ -1,0 +1,14 @@
+{
+    "INT": { 
+        "DAY": "#FFFFFF",
+        "NIGHT": "#82BD63",
+        "DAWN": "#BB3D23",
+        "DUSK": "#3D2857"
+    },
+    "EXT": { 
+        "DAY": "#FFF8C3",
+        "NIGHT": "#5AB3F8",
+        "DAWN": "#D9854C",
+        "DUSK": "#C33E88"
+    }
+}

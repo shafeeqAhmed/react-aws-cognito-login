@@ -1,0 +1,74 @@
+.root {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 33px;
+  bottom: 0;
+  background-color: rgba(1, 150, 241, 0.1);
+  border: solid 3px #0196f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 26px;
+}
+
+.cloudContainer  {
+  position: relative;
+}
+
+.cloud {
+  width: 116px;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5));
+  margin-bottom: -11px;
+}
+
+.arrowUp {
+  width: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 8px;
+}
+
+.dropFiles {
+  width: 250px;
+  height: 76px;
+  background-color: #38b3fe;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.folderContainer {
+  align-items: flex-end;
+  display: flex;
+  margin-top: 8px;
+  color: #fff;
+}
+
+.folder {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.cloudIcon {
+  width: 24px;
+  margin-right: 8px;
+}

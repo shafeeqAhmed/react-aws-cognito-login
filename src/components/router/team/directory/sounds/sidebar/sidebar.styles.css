@@ -1,0 +1,64 @@
+.leftSidebarArea {
+  width: 15%;
+  height: 100%;
+  min-height: 100%;
+  border-right: 1px solid #e4eaf0;
+}
+
+.teamDatabaseSectionTitle {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.teamDatabaseTitles {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.teamDatabaseTitle {
+  color: #98a2ab;
+  font-size: 10px;
+}
+
+.teamDatabaseSubtitle {
+  color: #98a2ab;
+  font-size: 14px;
+}
+
+.teamDatabaseTitleMenuButton {
+}
+
+.teamDatabaseTitleMenuButtonIcon {
+  transform: rotate(90deg);
+}
+
+.divider {
+  margin-bottom: 5px;
+}
+
+.segmentTable {
+  width: 100%;
+  padding: 20px;
+}
+
+.segment {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #0093ee;
+}
+
+.segmentLeft {
+}
+
+.segmentRight {
+  text-align: right;
+}

@@ -1,0 +1,67 @@
+.container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.option {
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $colorGrayLight;
+}
+.options {
+  flex-grow: 1;
+}
+button.option {
+  border: none;
+  color: $colorDark;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.divider {
+  background-color: $colorGrayLight;
+  font-size: 0.8rem;
+  color: $colorGray;
+  padding-left: 8px;
+}
+.dividerBilling {
+  background-color: $colorGrayLight;
+  font-size: 0.8rem;
+  color: $colorGray;
+  padding-left: 8px;
+  margin-top: 20px;
+}
+.footerOption {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10px 12px 15px;
+  border: none;
+  width: 100%;
+  border-radius: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.userOption {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  padding-right: 10px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $colorLightBlue;
+}
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.profile p {
+  margin: 0;
+  margin-left: 10px;
+}

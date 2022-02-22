@@ -1,0 +1,73 @@
+.login {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: &colorWhiteTwo;
+  text-align: center;
+  p {
+    @mixin font-size 16;
+    font-weight: 500;
+  }
+}
+
+.logo img {
+  width: 80%;
+}
+
+.logoRocksauce {
+  padding: 30px 0;
+}
+
+.header {
+  flex: 1 1 auto;
+  position: relative;
+  margin-bottom: $s4;
+  display: flex;
+  justify-content: center;
+}
+
+.fieldContainer {
+  width: 100%;
+}
+
+.field {
+  height: 40px;
+  border-bottom-color: $colorDarkFaded;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 500px;
+  margin: $s4 auto;
+  text-align: left;
+
+  input {
+    margin-bottom: $s2;
+  }
+}
+
+.forgotPassword {
+  text-align: center;
+  margin-top: $s4;
+  border: none;
+  padding: 0;
+  color: $colorTheme;
+  font-size: 1.1rem;
+}
+
+.error {
+  color: $colorRed;
+  margin: auto;
+}
+
+.submit {
+  background-color: $colorTheme;
+  width: 100%;
+  color: $colorWhite;
+  margin-top: $s3;
+  padding: $s3;
+  border-radius: 5px;
+}

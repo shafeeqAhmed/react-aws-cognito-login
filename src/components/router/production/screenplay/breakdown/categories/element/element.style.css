@@ -1,0 +1,141 @@
+.element {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  height: 24px;
+}
+
+.quantity {
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #000000;
+  text-align: center;
+  height: 100%;
+
+  width: 15%;
+  min-width: 15%;
+  max-width: 15%;
+  padding-right: 10px;
+}
+
+.quantityHidden {
+  visibility: hidden;
+}
+
+.quantityInputRoot {
+  background-color: #fff;
+  font-size: 12px !important;
+  line-height: 24px !important;
+  letter-spacing: normal;
+  color: #4f4f4f;
+  width: 15%;
+  min-width: 15%;
+  max-width: 15%;
+}
+
+.quantityInput {
+  background-color: #fff;
+  color: #4f4f4f;
+  padding: 0;
+  text-align: center;
+  font-size: 12px !important;
+  line-height: 24px !important;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.quantityDisabled {
+  background-color: transparent !important;
+  padding: 0;
+  font-size: 12px !important;
+  line-height: 24px !important;
+}
+
+.quantityInput::-webkit-inner-spin-button,
+.quantityInput::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.title {
+  flex-grow: 1;
+  width: 65%;
+  text-align: left;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #4a4a4a;
+  text-transform: none;
+  height: 100%;
+  white-space: nowrap;
+
+  flex-shrink: 2;
+  min-width: 35%;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+
+.titleHovered {
+  background-color: rgba(197, 95, 26, 0.2);
+}
+
+.anchorContainer {
+  margin-left: 15px;
+  width: 15%;
+  min-width: 15%;
+  padding-right: 6px;
+  text-align: right;
+  height: 100%;
+}
+
+.anchorContainerHovered {
+  background-color: rgba(197, 95, 26, 0.2);
+}
+
+.anchorIcon {
+  transform: scale(1.2);
+  margin-right: 5px;
+}
+
+.anchorAddIcon {
+  transform: scale(0.8);
+  margin-right: -2px;
+  cursor: pointer;
+}
+
+.anchorRemoveIcon {
+  transform: scale(1);
+  margin-right: 2.5px;
+  cursor: pointer;
+}
+
+.editable:focus {
+  background-color: #fff !important;
+  color: #4f4f4f;
+  padding-right: 10px;
+}
+
+.editable:focus:empty:before {
+  content: "#";
+  display: block;
+}
+
+.removeButtonRoot {
+  display: none;
+  color: #e16d20;
+  text-transform: uppercase;
+  background-color: rgba(197, 95, 26, 0.2);
+  font-size: 12px;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  padding: 0;
+  border-radius: 0;
+}
+
+.removeButtonRootHovered {
+  display: block;
+}

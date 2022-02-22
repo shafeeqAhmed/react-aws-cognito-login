@@ -1,0 +1,30 @@
+.drawerPaper {
+  position: "relative";
+  width: $drawerWidth;
+  border-right: none;
+  background-color: transparent !important;
+  overflow: visible !important;
+}
+
+.drawerContent {
+  background-color: #fff;
+  flex: 1;
+  box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2),
+    0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+}
+.hiddenDismissButton {
+  height: 52px;
+  border: none;
+  border-radius: none;
+  background-color: transparent;
+  cursor: default;
+}
+.content {
+  margin-left: 0;
+  transition: margin-left 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+}
+
+.contentDrawerOpen {
+  margin-left: $drawerWidth;
+  transition: margin-left 225ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}

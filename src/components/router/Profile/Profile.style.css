@@ -1,0 +1,301 @@
+.container {
+  overflow-y: scroll;
+  height: 100vh;
+  background-color: $colorDarkBlue;
+}
+
+.topBar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 55px;
+  padding-right: 1rem;
+  padding-left: 0.5rem;
+}
+
+.width {
+  width: 50%;
+}
+
+.backIcon {
+  font-size: 35px;
+  color: $colorWhite;
+}
+
+.visibilityIcon {
+  margin-right: 15px;
+  font-size: 15px;
+  color: $colorWhiteFaded;
+}
+
+.fieldVisibility {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.creditAsIcon {
+  font-size: 25px;
+  margin-right: 5px;
+  color: $colorWhite;
+}
+
+.creditAsIconDisable {
+  color: $colorWhiteFadedTwo;
+}
+
+.username {
+  color: $colorWhite;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.removeButton {
+  display: flex;
+  align-items: center;
+}
+
+.removeText {
+  color: $colorRed;
+}
+
+.avatar {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 2rem;
+  border-radius: 75px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.fieldDiv {
+  display: flex;
+  align-items: center;
+}
+
+.field {
+  height: 40px;
+  margin-bottom: 10px;
+  color: $colorWhite;
+  border-bottom-color: $colorWhiteFadedTwo;
+}
+
+.fieldContainer {
+  flex: 1;
+}
+
+.dataSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.creditAsText {
+  white-space: nowrap;
+  color: $colorWhite;
+}
+
+.roles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.noRoles {
+  color: $colorWhiteFaded;
+  font-style: italic;
+}
+
+.initKey {
+  color: $colorWhiteFadedTwo;
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+.titleBarText {
+  color: $colorGrayLightTwo;
+  text-align: center;
+  color: $colorGray;
+  font-size: 0.8rem;
+}
+
+.tag {
+  margin-right: 10px;
+  padding: 3px;
+  color: $colorDark;
+  background-color: $colorWhite;
+}
+
+.fieldVisibilityAdd {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.avatarContainer  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  flex-direction: column;
+  position: relative;
+}
+
+.addInputSection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.addInputSection button {
+  padding: 0;
+  color: $colorDark;
+  border: none;
+  width: 110px;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.role {
+  color: $colorWhite;
+  margin-right: 10px;
+}
+
+.rolesScroll {
+  width: 100%;
+  overflow: scroll;
+}
+
+.positionContainer {
+  margin-top: 15px;
+}
+
+.positionText {
+  font-size: 14px;
+  font-weight: 300;
+  color: $colorWhiteFaded;
+}
+
+.titleBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  background-color: $colorWhiteFadedTwo;
+  margin: auto;
+  width: 50%;
+}
+
+.tags {
+  margin-top: 20px;
+}
+
+.addIcon {
+  margin-left: 10px;
+  font-size: 25px;
+  color: $colorWhiteFaded;
+}
+
+.addButton {
+  border: none;
+  padding: 0;
+}
+
+.buttonContainer {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.submitBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 30%;
+  margin-top: 2rem;
+  border: none;
+  color: $colorWhite;
+  background: $colorWhiteFaded;
+}
+
+.submitAvatar {
+  width: 100%;
+}
+
+.cancelBtn {
+  border: 2px solid $colorWhiteFaded;
+  padding: 0;
+  height: 50px;
+  width: 100%;
+  color: $colorWhite;
+}
+
+.editAvatarLabels {
+  display: block;
+  color: #9f9f9f;
+}
+
+.editAvatarButton {
+  position: absolute;
+  right: 0;
+  bottom: 2rem;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 3px 3px;
+}
+
+.editAvatarInput {
+  margin-top: 5px;
+}
+
+.customFileInput {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.customFileInput input {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.customFileInput:before {
+  content: "Choose File";
+  display: block;
+  border: 2px solid #dca602;
+  padding: 5px 0px;
+  outline: none;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  border: none;
+  color: $colorWhite;
+  background: $colorWhiteFaded;
+}
+
+@media only screen and (max-width: 900px) {
+  .width {
+    width: 90%;
+  }
+  .titleBar {
+    width: 90%;
+  }
+}

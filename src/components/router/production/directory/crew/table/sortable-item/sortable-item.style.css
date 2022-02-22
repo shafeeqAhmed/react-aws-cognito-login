@@ -1,0 +1,90 @@
+.row {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e5eef5;
+  background-color: #fff;
+
+  & > span {
+    padding-left: 16px;
+    font-weight: normal;
+  }
+
+  & > span:first-child {
+    padding-left: 19px;
+  }
+}
+
+.nro {
+  font-size: 13px;
+  line-height: 1.46;
+  color: #3f536e;
+}
+
+.role {
+  font-size: 13px;
+  color: #0093ee;
+}
+
+.name,
+.status,
+.days {
+  font-size: 12px;
+  line-height: 1.58;
+  color: #313d4a;
+  display: flex;
+  align-items: center;
+}
+
+.name span {
+  margin-top: 4px;
+  font-weight: normal;
+}
+
+.name img {
+  margin-right: 6px;
+}
+
+.userAvatar {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+span.days {
+  padding-left: 25px;
+}
+
+.productionTags {
+  display: flex;
+  align-items: center;
+}
+
+.tag {
+  height: 25px;
+  border-radius: 13px;
+  margin-right: 5px;
+  font-size: 12px;
+  padding: 0 15px;
+  font-weight: normal;
+  text-align: center;
+  color: #313d4a;
+  display: flex;
+  align-items: center;
+}
+
+.moreTags {
+  font-size: 12px;
+  font-weight: normal;
+  color: #313d4a;
+}
+
+span.buttonContainer {
+  padding-left: 18px;
+}
+
+.button {
+  min-width: 31px !important;
+  width: 31px !important;
+  padding: 0 !important;
+}
